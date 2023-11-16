@@ -1,0 +1,82 @@
+body {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--dark);
+}
+
+header {
+    color: var(--white);
+    text-align: center;
+    line-height: 8vh;
+    height: 8vh;
+    background-color: var(--red);
+}
+
+#quadros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5vh;
+    background-color: var(--white);
+}
+
+.quadro {
+    color: var(--white);
+    font-size: 1.3rem;
+    background-color: var(--red);
+    margin: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 35vh;
+    min-width: auto;
+    min-height: auto;
+    border-radius: 1.25rem;
+}
+
+.quadro:hover {
+    cursor: pointer;
+}
+
+.desfocado {
+    filter: blur(0.06rem);
+}
+
+#popup {
+    position: absolute;
+    top: 10vh;
+    left: 12vw;
+    height: 80vh;
+    width: 76vw;
+    margin: 0 auto;
+    background: #343a40f6;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    color: var(--white);
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+    text-align: justify;
+    overflow: auto;
+}
+
+#botao-fechar-popup {
+    float: right;
+    cursor: pointer;
+}
+
+#botao-fechar-popup:hover {
+    float: right;
+    text-decoration: underline;
+}
+
+#popup::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 20px;
+}
+
+.oculto {
+    display: none;
+    visibility: none;
+}
