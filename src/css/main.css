@@ -4,7 +4,7 @@ body {
     background-color: var(--dark);
 }
 
-#main-header {
+#header-principal {
     color: var(--white);
     text-align: center;
     line-height: 8vh;
@@ -12,13 +12,19 @@ body {
     background-color: var(--red);
 }
 
-#quadros {
+main {
+    background-color: var(--white);
+}
+
+/* Quadros de informações */
+#quadros-container {
+    width: 70vw;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
     align-items: center;
     padding: 2.5vh;
-    background-color: var(--white);
 }
 
 .quadro {
@@ -29,56 +35,53 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: 25vh;
     width: 35vh;
     min-width: auto;
     min-height: auto;
     border-radius: 1.25rem;
     text-align: center;
-}
-
-.quadro:hover {
     cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.desfocado {
-    filter: blur(0.06rem);
+.inativo {
+    color: var(--grey);
+    cursor: not-allowed;
 }
 
+/* Elemento popup */
 #popup {
-    position: absolute;
+    position: fixed;
     top: 10vh;
     left: 12vw;
     height: 80vh;
     width: 76vw;
     margin: 0 auto;
-    background: #343a40f6;
+    background: #343a40;
+    opacity: 97%;
     border-radius: 1.25rem;
     padding: 1.25rem;
     color: var(--white);
-    font-size: 1.125rem;
+    font-size: 1.125rem; 
     line-height: 1.7rem;
     text-align: justify;
-    /* overflow: auto; */
 }
 
 #header-popup {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 6vh;
     width: 72.5vw;
-}
-
-#texto-popup {
-    width: 72vw;
-    height: 69vh;
-    overflow: auto;
-    padding-right: 2vw;
+    font-size: 2rem;
+    font-family: sans-serif;
 }
 
 #botao-fechar-popup {
-    float: right;
+    height: 1.8rem;
     cursor: pointer;
+    align-self: center;
 }
 
 #botao-fechar-popup:hover {
@@ -86,30 +89,52 @@ body {
     text-decoration: underline;
 }
 
-#texto-popup::-webkit-scrollbar {
+#conteudo-popup {
+    width: 72vw;
+    height: 64vh;
+    overflow: auto;
+    padding-right: 2vw;
+}
+
+.texto-informacoes {
+    font-family: sans-serif;
+}
+
+.subtitulo-informacoes {
+    line-height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+#conteudo-popup::-webkit-scrollbar {
     width: 0.6rem;
     height: 3rem;
 }
 
-#texto-popup::-webkit-scrollbar-button {
+#conteudo-popup::-webkit-scrollbar-button {
     height: 0;
 }
 
-#texto-popup::-webkit-scrollbar-corner {
+#conteudo-popup::-webkit-scrollbar-corner {
     border-radius: 8px;
 }
 
-#texto-popup::-webkit-scrollbar-thumb {
+#conteudo-popup::-webkit-scrollbar-thumb {
     background-color: var(--red);
     border-radius: 10px;
 }
 
-#texto-popup::-webkit-scrollbar-track {
+#conteudo-popup::-webkit-scrollbar-track {
     background-color: var(--white);
     border-radius: 10px;
 }
 
+/* Classes dinâmicas */
 .oculto {
     display: none;
     visibility: none;
+}
+
+.desfocado {
+    filter: blur(1px);
 }

@@ -10,33 +10,27 @@
 </head>
 
 <body>
-    <header id="main-header">Área do menu principal</header>
+    <header id="header-principal">Área do menu principal</header>
     <main>
-        <section id="quadros" class="">
-            <div class="quadro">Preparos de exames<br>(Em breve)</div>
-            <div class="quadro">Escala médica<br>(Em breve)</div>
-            <div class="quadro">Convênios de saúde<br>(Em breve)</div>
-            <div class="quadro">Ressonância<br>(Em breve)</div>
-            <div class="quadro">Mamografia<br>(Em breve)</div>
-            <div class="quadro">Lista de espera<br>(Em breve)</div>
+        <section id="quadros-container" class="">
+            <div id="quadro-preparos" class="quadro inativo">Preparos de exames<br>(Em breve)</div>
+            <div id="quadro-escala" class="quadro inativo">Escala médica<br>(Em breve)</div>
+            <div id="quadro-convenios" class="quadro inativo">Convênios de saúde<br>(Em breve)</div>
+            <div id="quadro-ressonancia" class="quadro inativo">Ressonância<br>(Em breve)</div>
+            <div id="quadro-mamografia" class="quadro" onclick="alterarPopup(conteudoMamografia())">Mamografia</div>
+            <div id="quadro-lista-espera" class="quadro inativo">Lista de espera<br>(Em breve)</div>
+            <div id="quadro-lista-espera" class="quadro inativo">Quadro<br>(Em breve)</div>
+            <div id="quadro-lista-espera" class="quadro inativo">Quadro<br>(Em breve)</div>
+            <div id="quadro-lista-espera" class="quadro inativo">Quadro<br>(Em breve)</div>
+            <div id="quadro-lista-espera" class="quadro inativo">Quadro<br>(Em breve)</div>
+            <div id="quadro-lista-espera" class="quadro inativo">Quadro<br>(Em breve)</div>
         </section>
-        <section id="popup" class="">
+        <section id="popup" class="oculto">
             <header id="header-popup">
-                <h2>Lorem ipsum</h2>
-                <span id="botao-fechar-popup"><img src="src/img/fechar.png" alt="" srcset=""></span>
+                <h2 id="titulo-popup"></h2>
+                <img src="src/img/fechar.png" alt="ícone-fechar" srcset="" id="botao-fechar-popup">
             </header>
-            <div id="texto-popup">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo voluptatibus, ducimus, dolorem ab sit molestias, aspernatur totam rerum consequuntur cupiditate deleniti a atque fugiat. Perspiciatis odit voluptatem repellendus soluta aliquam.
-                Esse labore nisi accusantium rem. Impedit, cum! Facere, alias obcaecati. Debitis, pariatur reprehenderit sit magni cumque eligendi voluptates? Voluptas harum numquam distinctio mollitia eveniet recusandae quam possimus magni vitae ipsum!
-                Molestiae voluptatum accusamus quos error, molestias saepe, at architecto eum ex vitae voluptatem officiis aut enim assumenda soluta ipsa nemo iusto quia quasi reiciendis veniam explicabo quo omnis pariatur? Cumque?
-                Iste quaerat necessitatibus qui doloremque commodi, vero ratione, non ipsa inventore fugiat dolorum sapiente illum saepe, nostrum omnis nihil enim in quisquam ad. Aliquid cumque adipisci ullam ut eligendi ducimus.
-                Nobis explicabo ipsam neque sed? Possimus, dolore distinctio, quaerat neque quae voluptatum consequatur nostrum quis vitae rem amet nam sit libero aut officia cupiditate culpa dolorum quia. Doloremque, incidunt sint!
-                Cum modi, magnam ullam illo, impedit rerum ratione vero odit quo animi error sed quod dolor et eligendi quibusdam iure dolorum incidunt exercitationem accusamus repudiandae ipsa atque eaque ipsum. Enim.
-                Nihil unde totam, rerum aperiam omnis dolor doloribus soluta asperiores labore quae, suscipit atque maxime ex provident modi commodi corporis sapiente incidunt libero placeat accusantium consequuntur aut magnam veniam! Quisquam.
-                Magnam illum corrupti quos autem voluptate consequuntur nostrum pariatur numquam nihil nisi. Cupiditate, ipsum. Facere incidunt in atque odit fugiat minus laboriosam cum, temporibus esse quibusdam aspernatur officia, accusantium modi.
-                Vitae, culpa ducimus esse, dignissimos nostrum earum fugit vero voluptatum nisi suscipit officiis explicabo excepturi accusamus odio nesciunt iusto quos perspiciatis impedit? Voluptas eveniet voluptates ad dicta excepturi saepe earum.
-                Similique, quis? Voluptate eaque illum voluptas impedit, eos, consequuntur eius aspernatur sint nemo autem est quidem quod amet tenetur vitae non asperiores deserunt aliquam eveniet facere magnam debitis iusto minus!</p>
-            </div>
+            <div id="conteudo-popup"></div>
         </section>
     </main>
     <script src="src/js/main.js"></script>
