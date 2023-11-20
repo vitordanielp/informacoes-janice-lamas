@@ -13,7 +13,7 @@ quadros.forEach((quadro) => quadro.addEventListener("click", () => {
     if (!quadro.classList.contains("inativo")) {
         popup.classList.remove("oculto")
         document.querySelector("#header-principal").classList.add("desfocado")
-        quadrosContainer.classList.add("desfocado")
+        document.querySelector("main").classList.add("desfocado")
     }
 }))
 
@@ -21,7 +21,6 @@ quadros.forEach((quadro) => quadro.addEventListener("click", () => {
 // Textos informativos
 function conteudoMamografia() {
     tituloPopup.textContent = "Mamografia"
-    let h3 = document.createElement("h3")
     let subtitulo = document.createElement("h3")
     let subtitulo1 = document.createElement("h3")
     let texto = document.createElement("p")
@@ -55,5 +54,5 @@ function fecharPopup() {
     limparPopup()
     popup.classList.add("oculto")
     document.querySelector("#header-principal").classList.remove("desfocado")
-    quadrosContainer.classList.remove("desfocado")
+    document.querySelector("main").classList.remove("desfocado")
 }
