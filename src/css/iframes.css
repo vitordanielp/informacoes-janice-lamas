@@ -1,0 +1,55 @@
+* {
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.titulo-iframe {
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+main {
+    overflow: auto;
+    height: 78vh;
+}
+
+.subtitulo-informacoes {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.link {
+    color: var(--white);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+select,
+option {
+    color: var(--dark-grey);
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+    border-radius: 10px;
+}

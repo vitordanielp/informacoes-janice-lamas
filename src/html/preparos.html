@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Informações de Preparos</title>
+    <link rel="stylesheet" href="/src/css/iframes.css">
+    <link rel="stylesheet" href="/src/css/reference.css">
+</head>
+
+<body>
+    <main>
+        <h1>Preparos de exames</h1>
+        <select id="select-preparos" onchange="exibePreparo()">
+            <option value="00">Escolha uma opção</option>
+            <option value="01">Abdome total</option>
+            <option value="02">Abdome superior</option>
+            <option value="03">Abdome total + densi 2 segmentos</option>
+            <option value="04">Abdome total + dexa</option>
+            <option value="05">Abdome superior + densi 2 segmentos</option>
+            <option value="06">Abdome superior + dexa</option>
+            <option value="07">Densitometria 2 segmentos</option>
+            <option value="08">Densitometria corpo inteiro</option>
+            <option value="09">Densi 2 + dexa</option>
+            <option value="10">Pélvica abdominal / próstata</option>
+            <option value="11">Pélvica abdominal / próstata + densi 2</option>
+            <option value="12">Pélvica abdominal / próstata + dexa</option>
+            <option value="13">Mamografia / ultrassonografia mamária</option>
+            <option value="14">Dr. Alexander (aorta / veia cava)</option>
+            <option value="15">Dr. Alexander (aorta / veia cava) + densi 2
+                segmentos</option>
+            <option value="16">Dr. Alexander (aorta / veia cava) + dexa
+            </option>
+            <option value="17">Consulta nutricional</option>
+        </select>
+    </main>
+    <script src="/src/js/preparos.js"></script>
+</body>
+
+</html>
