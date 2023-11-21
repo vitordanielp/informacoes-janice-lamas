@@ -11,22 +11,20 @@
 
 <body>
     <header id="header-principal">Área do menu principal</header>
-    <main>
+    <main id="main-container">
         <section id="quadros-container">
             <a href="/src/html/preparos.html" target="iframe-principal" class="quadro" id="quadro-preparos">Preparos de exames<br>(Em desenvolvimento)</a>
             <a href="/src/html/mamografia.html" target="iframe-principal" class="quadro" id="quadro-mamografia">Mamografia</a>
             <a href="http://weblaudos.janicelamas.com.br/web_laudos/login.asp" target="iframe-principal" class="quadro" id="quadro-resultados">Resultados de exames</a>
-            <a href="/src/html/preparos.html" target="iframe-principal" class="quadro inativo" id="quadro-scripts">Scripts<br>(Em breve)</a>
-            <a href="/src/html/preparos.html" target="iframe-principal" class="quadro inativo" id="quadro-convenios">Convênios de saúde<br>(Em breve)</a>
-            <a href="/src/html/preparos.html" target="iframe-principal" class="quadro inativo" id="quadro-ressonancia">Ressonância<br>(Em breve)</a>
-            <a href="/src/html/preparos.html" target="iframe-principal" class="quadro inativo" id="quadro-lista-espera">Lista de espera<br>(Em breve)</a>
-            <a href="/src/html/preparos.html" target="iframe-principal" class="quadro inativo" id="">Quadro<br>(Em breve)</a>
-            <a href="/src/html/preparos.html" target="iframe-principal" class="quadro inativo" id="">Quadro<br>(Em breve)</a>
+            <a href="/src/html/scripts.html" target="iframe-principal" class="quadro inativo" id="quadro-scripts">Scripts<br>(Em breve)</a>
+            <a href="/src/html/convenios.html" target="iframe-principal" class="quadro inativo" id="quadro-convenios">Convênios de saúde<br>(Em breve)</a>
+            <a href="/src/html/ressonancia.html" target="iframe-principal" class="quadro inativo" id="quadro-ressonancia">Ressonância<br>(Em breve)</a>
+            <a href="/src/html/lista-espera.html" target="iframe-principal" class="quadro inativo" id="quadro-lista-espera">Lista de espera<br>(Em breve)</a>
         </section>
     </main>
     <section id="popup">
         <iframe src="" frameborder="0" id="conteudo-popup" name="iframe-principal" sandbox="allow-same-origin"></iframe>
-        <img src="src/img/fechar.png" alt="ícone-fechar" id="botao-fechar-popup" onclick="fecharPopup()">
+        <img src="src/img/fechar.png" alt="ícone-fechar" id="botao-fechar-popup" height="22" onclick="fecharPopup()" style="border-radius: 50%;">
     </section>
     <script src="src/js/main.js"></script>
     <footer id="footer-principal">Conteúdo rodapé</footer>

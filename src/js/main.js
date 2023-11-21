@@ -8,7 +8,8 @@ quadros.forEach((quadro) => quadro.addEventListener("click", () => {
     if (!quadro.classList.contains("inativo")) {
         popup.style.display = "flex"
         document.querySelector("#header-principal").classList.add("desfocado")
-        document.querySelector("main").classList.add("desfocado")
+        document.querySelector("#main-container").classList.add("desfocado")
+        document.querySelector("#footer-principal").classList.add("desfocado")
     }
 }))
 
