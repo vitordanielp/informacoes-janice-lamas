@@ -25,6 +25,10 @@ main {
     font-family: sans-serif;
 }
 
+.texto-informacoes {
+    font-size: 1.2rem;
+}
+
 .link {
     color: var(--white);
     text-decoration: underline;

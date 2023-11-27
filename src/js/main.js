@@ -6,10 +6,12 @@ const quadros = document.querySelectorAll(".quadro")
 
 quadros.forEach((quadro) => quadro.addEventListener("click", () => {
     if (!quadro.classList.contains("inativo")) {
-        popup.style.display = "flex"
-        document.querySelector("#header-principal").classList.add("desfocado")
-        document.querySelector("#main-container").classList.add("desfocado")
-        document.querySelector("#footer-principal").classList.add("desfocado")
+        if (quadro.id !== "quadro-resultados") {
+            popup.style.display = "flex"
+            document.querySelector("#header-principal").classList.add("desfocado")
+            document.querySelector("#main-container").classList.add("desfocado")
+            document.querySelector("#footer-principal").classList.add("desfocado")
+        }
     }
 }))
 
