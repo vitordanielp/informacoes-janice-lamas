@@ -15,8 +15,12 @@ body {
 }
 
 main {
+    height: 90vh;
     overflow: auto;
-    height: 78vh;
+}
+
+.bloco-informacoes {
+    margin-bottom: 2rem;
 }
 
 .subtitulo-informacoes {
