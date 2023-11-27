@@ -24,4 +24,5 @@ function fecharPopup() {
     popup.style.display = "none"
     document.querySelector("#header-principal").classList.remove("desfocado")
     document.querySelector("main").classList.remove("desfocado")
+    document.querySelector("#footer-principal").classList.remove("desfocado")
 }
