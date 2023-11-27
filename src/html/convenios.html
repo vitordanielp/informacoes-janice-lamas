@@ -7,11 +7,10 @@
 </head>
 <body>
     <h1>Convênios de Saúde</h1>
-    <main>
-        <form action="">
-            <select name="select-convenio" id="select-convenio">
-                <option value="0" selected>Selecione um convênio</option>
-                <option value="aeronautica">AERONÁUTICA</option>
+    <form action="">
+        <select name="select-convenio" id="select-convenio" onchange="atualizaConvenio()">
+            <option value="0" selected>Selecione um convênio</option>
+            <option value="aeronautica">AERONÁUTICA</option>
                 <option value="bacen">BACEN</option>
                 <option value="caixa">CAIXA</option>
                 <option value="e-vida">E-VIDA</option>
@@ -25,6 +24,21 @@
                 <option value="unafisco">UNAFISCO</option>
             </select>
         </form>
+    <main>
+        <h2 id="nome-convenio">Meu convênio</h2>
+        <h3 id="restricoes-titulo">Restrições</h3>
+        <span id="restricoes">Mamografia somente com médicas.</span>
+        <h3 id="prazos-titulo">Prazos</h3>
+        <span id="prazos">
+            <ul>
+                <li>Mamografia: 3 dias.</li>
+                <li>Ressonância: 10 dias.</li>
+                <li>Densitometria: 3 dias.</li>
+                <li>Ultrassonografia: 2 dias.</li>
+            </ul>
+        </span>
+        <h3 id="observacoes-titulo">Observações</h3>
+        <span id="observacoes">Cobre tomossíntese.</span>
     </main>
 </body>
 </html>
