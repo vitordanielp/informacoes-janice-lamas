@@ -1,12 +1,77 @@
-#especificacoes-container {
+* {
+    --magnetom-color: #ec6603;
+}
+
+#equipamento-container {
+    background-color: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
+    max-width: 97vw;
 }
 
 #foto-equipamento {
-    height: 300px;
-    width: 360px;
+    max-height: 300px;
+    max-width: 400px;
     object-fit: cover;
+}
+
+#nome-equipamento {
+    font-size: 2rem;
+    color: var(--magnetom-color);
+    /* font-family: 'Work Sans', sans-serif; */
+}
+
+#texto-fonte-imagem {
+    font-size: .75rem;
+    text-align: center;
+    quotes: none;
+    color: #000;
+}
+
+#texto-fonte-imagem a {
+    color: #000;
+}
+
+#texto-fonte-imagem a:hover {
+    color: var(--primary);
+}
+
+#especificacoes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 350px;
+}
+
+#tabela-especificacoes{
+    max-width: 10rem;
+}
+
+.texto-tabela {
+    color: #000;
+}
+
+.titulo-tabela {
+    font-size: 1.125rem;
+    color: #000;
+    text-align: left;
+}
+
+#ressonancias-mesmo-dia {
+    max-width: 97vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--red);
+}
+
+.lista-container {
+    padding: 12px;
+}
+
+ul {
+    list-style: none;
 }

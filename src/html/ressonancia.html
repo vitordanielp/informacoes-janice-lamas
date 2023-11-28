@@ -5,50 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informações Ressonância Magnética</title>
+    <link rel="stylesheet" href="/src/css/reference.css">
     <link rel="stylesheet" href="/src/css/iframes.css">
     <link rel="stylesheet" href="/src/css/ressonancia.css">
 </head>
 
-<body style="color:#fff">
+<body>
     <h1>Ressonância Magnética</h1>
     <main>
         <section id="informacoes-fixas">
-            <div id="especificacoes-container">
+            <div id="equipamento-container">
                 <div id="foto-equipamento-container">
                     <img src="/src/img/equipamento-rm.png" alt="Magnetom Altea" id="foto-equipamento">
-                    <p>Fonte: <q><a
-                                href="https://www.siemens-healthineers.com/br/magnetic-resonance-imaging/0-35-to-1-5t-mri-scanner/magnetom-altea#05845495"
-                                target="_blank">https://www.siemens-healthineers.com</a></q>
+                    <p id="texto-fonte-imagem">Fonte: <q><a
+                        href="https://www.siemens-healthineers.com/br/magnetic-resonance-imaging/0-35-to-1-5t-mri-scanner/magnetom-altea#05845495"
+                        target="_blank">https://www.siemens-healthineers.com</a></q>
                     </p>
                 </div>
-                <table class="tabela-especificacoes">
-                    <thead>
-                        <tr>
-                            <th>Especificações técnicas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Peso máximo suportado</td>
-                            <td>200kg</td>
-                        </tr>
-                        <tr>
-                            <td>Comprimento do equipamento</td>
-                            <td>1,57m</td>
-                        </tr>
-                        <tr>
-                            <td>Força de campo</td>
-                            <td>1,5 Tesla</td>
-                        </tr>
-                        <tr>
-                            <td>Tamanho do furo</td>
-                            <td>70cm</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="especificacoes-container">
+                    <h2 id="nome-equipamento">MAGNETOM Altea</h2>
+                    <table class="tabela-especificacoes">
+                        <thead>
+                            <tr>
+                                <th class="titulo-tabela">Especificações técnicas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="texto-tabela">Peso máximo suportado</td>
+                                <td class="texto-tabela">200kg</td>
+                            </tr>
+                            <tr>
+                                <td class="texto-tabela">Comprimento do equipamento</td>
+                                <td class="texto-tabela">1,57m</td>
+                            </tr>
+                            <tr>
+                                <td class="texto-tabela">Força de campo</td>
+                                <td class="texto-tabela">1,5 Tesla</td>
+                            </tr>
+                            <tr>
+                                <td class="texto-tabela">Tamanho do furo</td>
+                                <td class="texto-tabela">70cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <article>
-                <h2>Ressonâncias <b>com contraste</b> no mesmo dia</h2>
+            <h2>Ressonâncias com contraste no mesmo dia</h2>
+            <article id="ressonancias-mesmo-dia">
                 <div id="lista-permitidas" class="lista-container">
                     <p>Permitidas</p>
                     <ul>
