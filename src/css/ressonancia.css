@@ -1,0 +1,12 @@
+#especificacoes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#foto-equipamento {
+    height: 300px;
+    width: 360px;
+    object-fit: cover;
+}

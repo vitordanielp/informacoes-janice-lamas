@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informações Ressonância Magnética</title>
+    <link rel="stylesheet" href="/src/css/iframes.css">
+    <link rel="stylesheet" href="/src/css/ressonancia.css">
 </head>
-<body>
-    
+
+<body style="color:#fff">
+    <h1>Ressonância Magnética</h1>
+    <main>
+        <section id="informacoes-fixas">
+            <div id="especificacoes-container">
+                <div id="foto-equipamento-container">
+                    <img src="/src/img/equipamento-rm.png" alt="Magnetom Altea" id="foto-equipamento">
+                    <p>Fonte: <q><a
+                                href="https://www.siemens-healthineers.com/br/magnetic-resonance-imaging/0-35-to-1-5t-mri-scanner/magnetom-altea#05845495"
+                                target="_blank">https://www.siemens-healthineers.com</a></q>
+                    </p>
+                </div>
+                <table class="tabela-especificacoes">
+                    <thead>
+                        <tr>
+                            <th>Especificações técnicas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Peso máximo suportado</td>
+                            <td>200kg</td>
+                        </tr>
+                        <tr>
+                            <td>Comprimento do equipamento</td>
+                            <td>1,57m</td>
+                        </tr>
+                        <tr>
+                            <td>Força de campo</td>
+                            <td>1,5 Tesla</td>
+                        </tr>
+                        <tr>
+                            <td>Tamanho do furo</td>
+                            <td>70cm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <article>
+                <h2>Ressonâncias <b>com contraste</b> no mesmo dia</h2>
+                <div id="lista-permitidas" class="lista-container">
+                    <p>Permitidas</p>
+                    <ul>
+                        <li>Crânio + tórax</li>
+                        <li>Crânio + coluna</li>
+                        <li>Crânio + ouvido (ossos temporais, mastóides, etc)
+                        </li>
+                        <li>Crânio + órbitas (olhos)</li>
+                        <li>Crânio + hipófise</li>
+                        <li>Crânio + sela túrcica</li>
+                        <li>Crânio + perfusão + espectroscopia</li>
+                    </ul>
+                </div>
+                <div id="lista-nao-permitidas" class="lista-container">
+                    <p>Restritas</p>
+                    <ul>
+                        <li>Mamas + qualquer outra</li>
+                        <li>Pelve + qualquer outra</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
+
 </html>
