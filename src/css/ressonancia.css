@@ -2,6 +2,7 @@
     --magnetom-color: #ec6603;
 }
 
+/* Informações do equipamento */
 #equipamento-container {
     background-color: #fff;
     display: flex;
@@ -20,7 +21,6 @@
 #nome-equipamento {
     font-size: 2rem;
     color: var(--magnetom-color);
-    /* font-family: 'Work Sans', sans-serif; */
 }
 
 #texto-fonte-imagem {
@@ -46,7 +46,7 @@
     width: 350px;
 }
 
-#tabela-especificacoes{
+#tabela-especificacoes {
     max-width: 10rem;
 }
 
@@ -60,18 +60,46 @@
     text-align: left;
 }
 
+/* Ressonancias no mesmo dia */
 #ressonancias-mesmo-dia {
     max-width: 97vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background: var(--red);
+    opacity: 100%;
+    padding-bottom: 2rem;
+}
+
+#titulo-rn-mesmo-dia {
+    text-align: center;
+    line-height: 4rem;
+}
+
+#listas-mesmo-dia-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-permissoes {
+    font-style: oblique;
+    width: fit-content;
+    margin-bottom: .5rem;
 }
 
 .lista-container {
-    padding: 12px;
+    text-align: left;
 }
 
 ul {
     list-style: none;
+}
+
+.observacao {
+    background-color: #ffff00ba;
+    color: var(--red);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5rem;
 }
