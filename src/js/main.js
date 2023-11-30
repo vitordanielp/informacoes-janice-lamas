@@ -1,5 +1,5 @@
 const popup = document.getElementById("popup")
-let conteudoPopup = document.getElementById("conteudo-popup")
+const iframe = document.getElementById("iframe-principal")
 const botaoFecharPopup = document.getElementById("botao-fechar-popup")
 const quadrosContainer = document.getElementById("quadros-container")
 const quadros = document.querySelectorAll(".quadro")
@@ -16,7 +16,7 @@ quadros.forEach((quadro) => quadro.addEventListener("click", () => {
 }))
 
 function limparPopup() {
-    conteudoPopup.src = ""
+    iframe.src = ""
 }
 
 function fecharPopup() {

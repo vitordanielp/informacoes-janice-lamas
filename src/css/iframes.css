@@ -9,9 +9,9 @@ body {
     overflow: hidden;
 }
 
-.titulo-iframe {
+h1 {
     font-size: 2rem;
-    line-height: 3.5rem;
+    line-height: 3rem;
 }
 
 main {
@@ -45,19 +45,31 @@ option {
 }
 
 ::-webkit-scrollbar {
-    width: 0.6rem;
-}
-
-::-webkit-scrollbar-corner {
-    border-radius: 8px;
+    width: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--red);
-    border-radius: 10px;
+    border: solid .15rem #fff;
+    /* border-radius: 8px; */
 }
 
 ::-webkit-scrollbar-track {
     background-color: var(--white);
-    border-radius: 10px;
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+    background-color: #fff;
+    height: .1rem;
+    border-color: var(--red);
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-radius: 0 25px 0 0;
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-radius: 0 0 25px 0;
 }
