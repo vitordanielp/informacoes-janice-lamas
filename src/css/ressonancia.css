@@ -81,6 +81,7 @@
 h2 {
     text-align: center;
     line-height: 4rem;
+    color: var(--white);
 }
 
 #listas-mesmo-dia-container {
