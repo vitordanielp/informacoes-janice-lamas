@@ -45,31 +45,18 @@ option {
 }
 
 ::-webkit-scrollbar {
-    width: 1rem;
+    width: .6rem;
+    background-color: var(--white);
+    border-radius: 0 8px 8px 0;
 }
 
 ::-webkit-scrollbar-thumb {
+    border: solid .15rem .15rem #fff;
     background-color: var(--red);
-    border: solid .15rem #fff;
-    /* border-radius: 8px; */
+    border: 1px solid #fff;
+    border-radius: 8px;
 }
 
-::-webkit-scrollbar-track {
-    background-color: var(--white);
-}
-
-/* Buttons */
 ::-webkit-scrollbar-button:single-button {
-    background-color: #fff;
-    height: .1rem;
-    border-color: var(--red);
-}
-/* Up */
-::-webkit-scrollbar-button:single-button:vertical:decrement {
-    border-radius: 0 25px 0 0;
-}
-
-/* Down */
-::-webkit-scrollbar-button:single-button:vertical:increment {
-    border-radius: 0 0 25px 0;
+    height: 3px;
 }
