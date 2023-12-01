@@ -72,6 +72,7 @@
 
 /* Ressonancias no mesmo dia */
 #ressonancias-mesmo-dia {
+    color: var(--white);
     background: var(--red);
     opacity: 100%;
     padding-bottom: 2rem;
