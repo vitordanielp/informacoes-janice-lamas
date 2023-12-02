@@ -131,7 +131,7 @@ ul {
 .quadro-cuidados {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 4px;
     background-color: var(--white);
     width: 20dvw;
@@ -151,7 +151,7 @@ ul {
 
 .span-quadro-cuidados {
     color: var(--dark-grey);
-    font-size: .9rem;
+    font-size: .85rem;
     font-weight: 600;
 }
 
