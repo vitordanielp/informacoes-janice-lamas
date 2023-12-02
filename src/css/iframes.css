@@ -11,10 +11,11 @@ body {
 h1 {
     font-size: 2rem;
     color: var(--white);
+    text-align: center;
 }
 
 main {
-    height: 90vh;
+    max-height: 90vh;
     overflow: auto;
 }
 
