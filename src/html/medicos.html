@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Médicos</title>
+        <link rel="stylesheet" href="/src/css/iframes.css">
+        <link rel="stylesheet" href="/src/css/medicos.css">
+        <link rel="stylesheet" href="/src/css/reference.css">
+    </head>
+    <body>
+        <h1 class="titulo-iframe">Médicos</h1>
+        <main id="main-container">
+            <aside id="menu-lateral">
+                <p>Selecione um médico</p>
+                <form id="lateral-form" onchange="exibeInformacao()">
+                    <div class="input-container">
+                        <input type="radio" name="input-medico" id="dr-alexander" checked>
+                        <label for="dr-alexander">Alexander</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="radio" name="input-medico" id="dra-amanda">
+                        <label for="dra-amanda">Amanda</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="radio" name="input-medico" id="dra-larissa">
+                        <label for="dra-larissa">Larissa</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="radio" name="input-medico" id="dr-sergio">
+                        <label for="dr-sergio">Sergio Sampaio</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="radio" name="input-medico" id="dra-adriana-freire">
+                        <label for="dra-adriana-freire">Adriana Freire</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="radio" name="input-medico" id="dra-janice">
+                        <label for="dra-janice">Janice Lamas</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="radio" name="input-medico" id="dra-thais-lamas">
+                        <label for="dra-thais-lamas">Thais Lamas</label>
+                    </div>
+                </form>
+            </aside>
+            <section id="informacoes-container">
+                <table class="escala-medica" id="escala-medica-lago">
+                    <thead>
+                        <tr>
+                            <th id="titulo-escala-medica" colspan="8">Escala da semana - Lago Sul</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="transparente"></td>
+                            <th rowspan="2">MAMO</th>
+                            <td>Segunda</td>
+                            <td>Terça</td>
+                            <td>Quarta</td>
+                            <td>Quinta</td>
+                            <td>Sexta</td>
+                            <td>Sábado</td>
+                        </tr>
+                        <tr>
+                            <td class="transparente"></td>
+                            <td>04/dez</td>
+                            <td>05/dez</td>
+                            <td>06/dez</td>
+                            <td>07/dez</td>
+                            <td>08/dez</td>
+                            <td>09/dez</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">Manhã</th>
+                            <th>Exames</th>
+                            <td class="td-medico">Técnica</td>
+                            <td class="td-medico">Técnica</td>
+                            <td class="td-medico">Iris Gardênia</td>
+                            <td class="td-medico">Silvio</td>
+                            <td class="td-medico">Renata Estrela</td>
+                            <td class="td-medico">Técnica</td>
+                        </tr>
+                        <tr>
+                            <th>Resp. Laudo</th>
+                            <td class="td-medico dra-amanda">Amanda Assis</td>
+                            <td class="td-medico dra-amanda">Amanda Assis</td>
+                            <td class="td-medico">-</td>
+                            <td class="td-medico">-</td>
+                            <td class="td-medico">-</td>
+                            <td class="td-medico dra-amanda">Amanda Assis</td>
+                        </tr>
+                        <tr>
+                            <th>Tomossíntese</th>
+                            <td class="td-medico dra-janice">Janice Lamas (6 horários)</td>
+                            <td class="td-medico dra-janice">Janice Lamas (6 horários)</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Tarde</th>
+                            <th>Exames</th>
+                            <td class="td-medico">Yara</td>
+                            <td class="td-medico">Yara</td>
+                            <td class="td-medico">Yara</td>
+                            <td class="td-medico">Yara</td>
+                            <td class="td-medico">Técnica</td>
+                        </tr>
+                        <tr>
+                            <th>Resp. Laudo</th>
+                            <td class="td-medico">-</td>
+                            <td class="td-medico">-</td>
+                            <td class="td-medico">-</td>
+                            <td class="td-medico">-</td>
+                            <td class="td-medico dra-amanda">Amanda Assis</td>
+                        </tr>
+                        <br>
+                        
+                    </tbody>
+                </table>
+                <h2 id="nome-medico"></h2>
+                <article id="informacoes-medico">
+                    <img src="/src/img/doctor.png" alt="foto-medico" height="80px">
+                    <table id="tabela-resumo-medico">
+                        <tbody>
+                            <tr>
+                                <th>Especialidade</th>
+                                <td id="especialidade"></td>
+                            </tr>
+                            <tr>
+                                <th>Unidade</th>
+                                <td id="unidade-atendimento"></td>
+                            </tr>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <script src="/src/js/medicos.js"></script>
+    </body>
+</html>
