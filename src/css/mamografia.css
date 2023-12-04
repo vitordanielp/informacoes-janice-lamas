@@ -27,6 +27,10 @@
     text-align: center;
 }
 
+.texto-informacoes {
+    font-size: 1.2rem;
+}
+
 .bloco-informacoes {
     max-width: 40vw;
 }
