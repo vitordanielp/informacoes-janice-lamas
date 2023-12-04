@@ -8,7 +8,7 @@ body {
     overflow: hidden;
 }
 
-h1 {
+.titulo-iframe {
     font-size: 2rem;
     color: var(--white);
     text-align: center;

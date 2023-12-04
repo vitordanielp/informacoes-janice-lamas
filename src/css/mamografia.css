@@ -44,6 +44,8 @@
 
 .lista-convenios {
     list-style: none;
+    font-size: .7rem;
+    text-decoration: underline;
 }
 
 h3 {
