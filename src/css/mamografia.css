@@ -1,48 +1,51 @@
 #container-principal {
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
     background-color: #fff;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
 }
 
 .informacoes-container {
     background-color: var(--red);
+    color: #fff;
+    text-align: justify;
+    height: 78vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 8px;
-    outline: solid 1.5px #000;
-    margin: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
     box-shadow: 5px 5px 8px #30303090;
-    color: #fff;
+    border-radius: 8px;
 }
 
 .subtitulo-informacoes {
     font-size: 1.5rem;
+    line-height: 3rem;
     text-align: center;
 }
 
 .bloco-informacoes {
-    /* background-color: blue; */
     max-width: 40vw;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+}
+
+.observacao {
+    font-style: italic;
+    text-align: center;
+    color: var(--red);
+    background-color: #ffff00ba;
 }
 
 .bloco-lista-convenios {
-    /* background-color: steelblue; */
-    margin: 0 auto;
+    text-align: center;
 }
 
 .lista-convenios {
-    /* background-color: aqua; */
-    list-style-position: inside;
+    list-style: none;
 }
 
-b {
-    background-color: #ffff00ba;
-    color: var(--red);
+h3 {
+    font-size: 1rem;
 }

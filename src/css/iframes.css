@@ -19,25 +19,6 @@ main {
     overflow: auto;
 }
 
-.bloco-informacoes {
-    margin-bottom: 2rem;
-}
-
-.texto-informacoes {
-    font-size: 1.2rem;
-}
-
-.link {
-    color: var(--white);
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-select,
-option {
-    color: var(--dark-grey);
-}
-
 ::-webkit-scrollbar {
     width: .6rem;
     background-color: var(--white);
