@@ -1,0 +1,48 @@
+#container-principal {
+    border-radius: 0 8px 8px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.informacoes-container {
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    outline: solid 1.5px #000;
+    margin: 1rem;
+    box-shadow: 5px 5px 8px #30303090;
+    color: #fff;
+}
+
+.subtitulo-informacoes {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bloco-informacoes {
+    /* background-color: blue; */
+    max-width: 40vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bloco-lista-convenios {
+    /* background-color: steelblue; */
+    margin: 0 auto;
+}
+
+.lista-convenios {
+    /* background-color: aqua; */
+    list-style-position: inside;
+}
+
+b {
+    background-color: #ffff00ba;
+    color: var(--red);
+}

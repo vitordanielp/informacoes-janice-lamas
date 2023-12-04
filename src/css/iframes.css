@@ -10,23 +10,17 @@ body {
 
 h1 {
     font-size: 2rem;
-    line-height: 3rem;
     color: var(--white);
+    text-align: center;
 }
 
 main {
-    height: 90vh;
+    max-height: 90vh;
     overflow: auto;
 }
 
 .bloco-informacoes {
     margin-bottom: 2rem;
-}
-
-.subtitulo-informacoes {
-    line-height: 3rem;
-    font-size: 1.5rem;
-    font-family: sans-serif;
 }
 
 .texto-informacoes {

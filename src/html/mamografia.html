@@ -3,54 +3,57 @@
 
 <head>
     <title>Informações mamografia</title>
-    <link rel="stylesheet" href="/src/css/iframes.css">
     <link rel="stylesheet" href="/src/css/reference.css">
+    <link rel="stylesheet" href="/src/css/iframes.css">
+    <link rel="stylesheet" href="/src/css/mamografia.css">
 </head>
 
 <body>
     <h1 class="titulo-iframe">Mamografia</h1>
-    <main>
-        <article class="bloco-informacoes">
+    <main id="container-principal">
+        <section class="informacoes-container">
             <h2 class="subtitulo-informacoes">Mamografia digital 3D (tomossíntese)</h2>
-            <p class="texto-informacoes">&emsp;A mamografia 3D ou tomossíntese é
-                uma técnica inovadora que aumenta a possibilidade de detecção
-                precoce do câncer de mama. Ela permite a visualização de lesões
-                ocultas, em particular pequenas distorções, por meio de cortes
-                milimétricos com reconstrução 3D da mama, realizada por software.
-            </p><br>
-            <p>
-                <b><i style="background-color: #ffff00ba;color: var(--red);">
-                NÃO É NECESSÁRIO TROCAR O PEDIDO MÉDICO PARA REALIZAR TOMOSSÍNTESE.</i></b>
-            </p><br>
-            <p>
-                <i>Convênios que cobrem tomossíntese: </i>
-                <b><ul style="list-style-position: inside;">
+            <article class="bloco-informacoes">
+                <p class="texto-informacoes">A mamografia 3D ou tomossíntese é
+                    uma técnica inovadora que aumenta a possibilidade de detecção
+                    precoce do câncer de mama. Ela permite a visualização de lesões
+                    ocultas, em particular pequenas distorções, por meio de cortes
+                    milimétricos com reconstrução 3D da mama, realizada por software.
+                </p>
+                <p class="observacao">Não é necessário trocar o pedido médico para realizar tomossíntese.</p>
+            </article>
+            <article class="bloco-lista-convenios">
+                <p>Convênios que cobrem tomossíntese:</p>
+                <ul id="lista-tomossintese" class="lista-convenios">
                     <li>AMIL ONE HEALTH</li>
                     <li>CÂMARA DOS DEPUTADOS</li>
                     <li>MPU</li>
                     <li>SERPRO</li>
                     <li>UNAFISCO SAÚDE</li>
-                </ul></b>
-            </p>
-        </article>
-        <article class="bloco-informacoes">
+                </ul>
+            </article>
+        </section>
+        <section class="informacoes-container">
             <h2 class="subtitulo-informacoes">Consulta mamografia</h2>
-            <p class="texto-informacoes">&emsp;O exame clínico das mamas é
-                realizado por médica radiologista especialista, em
-                conjunto com a entrevista para invertigação dos fatores
-                de risco, análise comparativa com os exames anteriores
-                e a correlação com outros exames de imagens, sendo as
-                explicações sobre o exame realizado e fornecidas
-                diretamente para a paciente.
-            </p><br>
-            <p><i>Convênios sem cobertura para consulta:</i></p>
-            <b><ul style="list-style-position: inside;">
-                <li>AERONÁUTICA</li>
-                <li>CASSI</li>
-                <li>GEAP</li>
-            </ul></b>
-            <!-- <span><a href="" class="link">AERONÁUTICA</a>, <a href="" class="link">CASSI</a>, <a href="" class="link">GEAP</a></span>.</p> -->
-        </article>
+            <article class="bloco-informacoes">
+                <p class="texto-informacoes">O exame clínico das mamas é
+                    realizado por médica radiologista especialista, em
+                    conjunto com a entrevista para invertigação dos fatores
+                    de risco, análise comparativa com os exames anteriores
+                    e a correlação com outros exames de imagens, sendo as
+                    explicações sobre o exame realizado e fornecidas
+                    diretamente para a paciente.
+                </p>
+            </article>
+            <article class="bloco-lista-convenios">
+                <p>Convênios sem cobertura para consulta:</p>
+                <ul id="lista-consulta" class="lista-convenios">
+                    <li>AERONÁUTICA</li>
+                    <li>CASSI</li>
+                    <li>GEAP</li>
+                </ul>
+            </article>
+        </section>
     </main>
     <script src="/src/js/main.js"></script>
 </body>
