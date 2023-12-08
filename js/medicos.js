@@ -1,5 +1,6 @@
 const medicosNaTabela = document.querySelectorAll(".td-medico");
 const imagemEscala = document.querySelector("#imagem-escala");
+const observacoes = document.querySelectorAll(".observacoes");
 
 class Medico {
     constructor(nome, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias) {
@@ -11,7 +12,6 @@ class Medico {
         this.numeroRegistro = numeroRegistro;
         this.seletor = seletor;
         this.categorias = categorias;
-
     }
 
     getCategorias() {
@@ -46,9 +46,22 @@ function adicionarMedico(nome, sexo, unidade, especialidade, tipoRegistro, numer
     medicos.push(medico);
 }
 
+function exibeObservacoes(medico) {
+    for(let div of observacoes) {
+        div.textContent = `Observações de ${medico.nome.split(" ")[0]} serão inseridas neste campo.`;
+        if(div.id !== `observacoes-${medico.seletor}`) {
+            if (!div.classList.contains("oculto")) {
+                div.classList.add("oculto");
+            }
+        }
+        else {
+            div.classList.remove("oculto");
+        }
+    }
+}
+
 // TODO: adicionar função de exibir a imagem de cada médico
 function exibeInformacao() {
-    medicosNaTabela.forEach(td => { td.classList.remove("destaque-escala") });
     const selected = document.querySelector("input:checked");
     const nomeMedico = document.getElementById("nome-medico");
     const especialidade = document.getElementById("especialidade");
@@ -65,11 +78,7 @@ function exibeInformacao() {
     categoria.textContent = medico.getCategorias();
     medico.sexo === "M" ? iconeMedico.src = "../img/medico.png" : iconeMedico.src = "../img/medica.png";
     unidade.textContent = medico.unidade;
-    for (let i of medicosNaTabela) {
-        if (i.classList.contains(medico.seletor)) {
-            i.classList.add("destaque-escala");
-        }
-    }
+    exibeObservacoes(medico);
 }
 
 // TODO: trazer informações de médicos via JSON

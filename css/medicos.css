@@ -73,12 +73,34 @@ label:hover {
     min-width: 100px;
 }
 
-.escala-medica {
+#observacoes-container {
+    border: 1px solid #000;
     width:  63vw;
-    margin: 1rem;
-    outline: 1px solid #000;
+    margin: 1rem auto;
 }
 
-.transparente {
-    opacity: 0;
+#observacoes-container h3 {
+    text-align: center;
+    line-height: 2rem;
+    color: var(--red);
+}
+
+.observacoes {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.oculto {
+    display: none;
+}
+
+#escalas-medicas-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.escala-medica {
+    width:  63vw;
+    margin: 1rem auto;
+    border: 1px solid #000;
 }
