@@ -48,7 +48,10 @@ function adicionarMedico(nome, sexo, unidade, especialidade, tipoRegistro, numer
 
 function exibeObservacoes(medico) {
     for(let div of observacoes) {
-        div.textContent = `Observações de ${medico.nome.split(" ")[0]} serão inseridas neste campo.`;
+        if(div.textContent === "") {
+            div.textContent = `Observações de ${medico.nome.split(" ")[0]} serão inseridas neste campo.`;
+        }
+        
         if(div.id !== `observacoes-${medico.seletor}`) {
             if (!div.classList.contains("oculto")) {
                 div.classList.add("oculto");
