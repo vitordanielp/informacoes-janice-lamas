@@ -22,14 +22,12 @@ main {
 ::-webkit-scrollbar {
     width: .6rem;
     background-color: var(--white);
-    border-radius: 0 8px 8px 0;
 }
 
 ::-webkit-scrollbar-thumb {
     border: solid .15rem .15rem #fff;
     background-color: var(--red);
     border: 1px solid #fff;
-    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-button:single-button {
