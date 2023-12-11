@@ -75,8 +75,7 @@ main {
     height: 80vh;
     width: 75vw;
     margin: 0 auto;
-    background: #343a40;
-    opacity: 98%;
+    background: #343a40f0;
     border-radius: 25px;
     padding: 1.25rem;
     z-index: 1;
