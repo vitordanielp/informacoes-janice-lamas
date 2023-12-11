@@ -1,0 +1,27 @@
+* {
+    color: #fff;
+}
+
+select, option {
+    color: #000;
+    /* max-width: 35vw; */
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#imagem-preparo-container {
+    max-height: 100vh;
+    margin: 0 auto;
+}
+
+#imagem-preparo {
+    max-height: 130vh;
+}
+
+.elemento-oculto {
+    display: none;
+}
