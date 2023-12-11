@@ -1,27 +1,95 @@
-* {
-    color: #fff;
-}
-
-select, option {
-    color: #000;
-    /* max-width: 35vw; */
-}
-
 main {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
 
+#formulario-preparos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+
+#radios-preparos-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7rem;
+}
+
+.radio-container:hover * {
+    cursor: pointer;
+}
+
+#link-whatsapp-container {
+    font-size: 1rem;
+    text-align: justify;
+    height: 12dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#link-whatsapp-subcontainer {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#btn-copiar-link {
+    color: var(--white);
+    width: 35%;
+    height: 100%;
+    background-color: var(--red);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 2px solid var(--red);
+}
+
+#btn-copiar-link:hover {
+    cursor: pointer;
+    background-color: #d00;
+}
+
+#btn-copiar-link:active {
+    font-size: small;
+    background-color: #f00;
 }
 
 #imagem-preparo-container {
-    max-height: 100vh;
-    margin: 0 auto;
+    box-shadow: 0px 0px 15px 2px #303030;
+    border: 1px solid #30303090;
+    margin: 1.5rem 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #imagem-preparo {
-    max-height: 130vh;
+    max-width: 40vw;
 }
 
 .elemento-oculto {
     display: none;
+}
+
+input {
+    appearance: none;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    /* background-color: var(--red); */
+    border: 2px solid #fff;
+    outline: 1px solid var(--red);
+    /* top: 2px; */
+    transition: 500ms;
+}
+
+input:checked {
+    transition: 500ms;
+    background-color: var(--red);
 }
