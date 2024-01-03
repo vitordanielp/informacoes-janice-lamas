@@ -11,20 +11,154 @@
 <body>
     <h1 class="titulo-iframe">Mamografia</h1>
     <main id="container-principal">
-        <section id="image-container">
+        <!-- <section id="image-container">
             <img src="../img/mamografia.jpg" alt="tabela de convênios mamografia" id="tabela-convenios-mamografia">
+        </section> -->
+        <section id="tabela-container">
+            <table id="tabela-convenios-mamografia">
+                <tbody>
+                    <!-- Cobrem Tomossíntese -->
+                    <tr class="tr-tomossintese">
+                        <th rowspan="3">Cobrem tomossíntese (Dra. Janice)</th>
+                        <td>AMIL ONE HEALTH</td>
+                        <td>SERPRO</td>
+                    </tr>
+                    <tr class="tr-tomossintese">
+                        <td>MPU (ministérios)</td>
+                        <td>UNAFISCO SAÚDE / SINDIFISCO</td>
+                    </tr>
+                    <tr class="tr-tomossintese">
+                        <td colspan="2">CÂMARA DOS DEPUTADOS (PRÓ SAÚDE)</td>
+                    </tr>
+
+                    <!-- Consulta médica -->
+                    <tr class="tr-consulta-medica">
+                        <th rowspan="10">Consulta Médica</th>
+                        <td>ASSEFAZ</td>
+                        <td>STF MED</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td>BACEN</td>
+                        <td>STJ - PRÓ SER</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td>CÂMARA DOS DEPUTADOS / PRÓ SAÚDE</td>
+                        <td>STM - PLAS JMU</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td>CASEMBRAPA</td>
+                        <td>TJDFT PRÓ SAÚDE</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td>FASCAL</td>
+                        <td>TRE</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td>MPU</td>
+                        <td>TRF</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td>PROASA</td>
+                        <td>TRT</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td>SERPRO</td>
+                        <td>TST</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td>SIS - SENADO</td>
+                        <td>UNAFISCO SAÚDE / SINDIFISCO</td>
+                    </tr>
+                    <tr class="tr-consulta-medica">
+                        <td colspan="2">UNIMED SEGUROS SAÚDE</td>
+                    </tr>
+
+                    <!-- Agenda Mista -->
+                    <tr class="tr-agenda-mista">
+                        <th rowspan="13">Agenda Mista</th>
+                        <td>AMIL ONE HEALTH</td>
+                        <td>E-VIDA</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>AFFEGO</td>
+                        <td>EMBRATEL E DEMAIS PLANOS</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>ASETE (ASTE)</td>
+                        <td>EMBRATEL TELOS</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>BRADESCO SAÚDE</td>
+                        <td>FAPES (BNDES)</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>BRB</td>
+                        <td>FUSEX</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>CAPESESP</td>
+                        <td>GDF</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>CAEME-GO</td>
+                        <td>LIFE EMPRESARIAL</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>CAESAN</td>
+                        <td>MEDISERVICE</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>CAMED</td>
+                        <td>PETROBRÁS</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>CNTI</td>
+                        <td>POLÍCIA FEDERAL</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>CASEC / CODEVASF</td>
+                        <td>POSTAL SAÚDE</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>CONAB</td>
+                        <td>REAL GRANDEZA (DEMAIS PLANOS)</td>
+                    </tr>
+                    <tr class="tr-agenda-mista">
+                        <td>CAIXA</td>
+                        <td>REAL GRANDEZA (SALVUS E SALUTEM)</td>
+                    </tr>
+
+                    <!-- Somente técnica -->
+                    <tr class="tr-somente-tecnica">
+                        <th rowspan="3">Somente Técnica</th>
+                        <td colspan="2">AERONÁUTICA</td>
+                    </tr>
+                    <tr class="tr-somente-tecnica">
+                        <td colspan="2">GEAP</td>
+                    </tr>
+                    <tr class="tr-somente-tecnica">
+                        <td colspan="2">CASSI</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section class="informacoes-container">
             <article class="bloco informacoes">
-                <h2 class="subtitulo-informacoes">Mamografia 3D (tomossíntese)</h2>
+                <h2 class="subtitulo-informacoes">Mamografia 3D (tomossíntese)
+                </h2>
                 <p class="texto-informacoes">A mamografia 3D ou tomossíntese é
-                    uma técnica inovadora que aumenta a possibilidade de detecção
-                    precoce do câncer de mama. Ela permite a visualização de lesões
-                    ocultas, em particular pequenas distorções, por meio de cortes
-                    milimétricos com reconstrução 3D da mama, realizada por software.
+                    uma técnica inovadora que aumenta a possibilidade de
+                    detecção
+                    precoce do câncer de mama. Ela permite a visualização de
+                    lesões
+                    ocultas, em particular pequenas distorções, por meio de
+                    cortes
+                    milimétricos com reconstrução 3D da mama, realizada por
+                    software.
                 </p>
                 <br>
-                <p class="observacao">Não precisa trocar o pedido para fazer tomossíntese.</p>
+                <p class="observacao">Não precisa trocar o pedido para fazer
+                    tomossíntese.</p>
             </article>
             <article class="bloco informacoes">
                 <h2 class="subtitulo-informacoes">Consulta mamografia</h2>

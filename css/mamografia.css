@@ -46,3 +46,30 @@
 h3 {
     font-size: 1rem;
 }
+
+#tabela-convenios-mamografia {
+    background-color: #000;
+    border-spacing: 1px;
+    text-align: center;
+    width: 65vw;
+    font-size: .9rem;
+}
+
+.tr-tomossintese {
+    background-color: #40e;
+    color: #fdfdfd;
+}
+
+.tr-consulta-medica {
+    background-color: #0a0;
+    color: #fdfdfd;
+}
+
+.tr-agenda-mista {
+    background-color: #ef0;
+}
+
+.tr-somente-tecnica {
+    background-color: #b00;
+    color: #fdfdfd;
+}
