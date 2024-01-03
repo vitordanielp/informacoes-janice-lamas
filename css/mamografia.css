@@ -39,15 +39,8 @@
 .observacao {
     font-style: italic;
     text-align: center;
-    color: var(--red);
+    color: #101010;
     background-color: #ffff00ba;
-}
-
-.lista-convenios {
-    text-align: center;
-    list-style: none;
-    font-size: .7rem;
-    margin-bottom: 1rem;
 }
 
 h3 {

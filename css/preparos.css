@@ -10,7 +10,6 @@ main {
     justify-content: flex-start;
 }
 
-
 #radios-preparos-container {
     display: flex;
     flex-direction: column;
