@@ -54,6 +54,7 @@ h3 {
     width: 65vw;
     font-size: .9rem;
     margin-top: 10px;
+    user-select: none;
 }
 
 .tr-tomossintese {
