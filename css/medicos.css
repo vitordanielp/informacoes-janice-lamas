@@ -77,17 +77,19 @@ label:hover {
     border: 1px solid #000;
     width:  63vw;
     margin: 1rem auto;
+    padding: 10px 0;
 }
 
 #observacoes-container h3 {
     text-align: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
     color: var(--red);
 }
 
 .observacoes {
-    width: 90%;
+    max-width: 98%;
     margin: 0 auto;
+    text-align: left;
 }
 
 .oculto {
