@@ -1,12 +1,26 @@
-const imagemPreparo = document.querySelector("#imagem-preparo");
+const imagemPreparoRotina = document.querySelector("#imagem-preparo-rotina");
+const imagemPreparoRessonancia = document.querySelector("#imagem-preparo-ressonancia");
 const botaoCopiarLink = document.querySelector("#btn-copiar-link");
-const radiosPreparo = document.getElementsByName("preparo");
-// const radiosPeriodo = document.getElementsByName("periodo");
-const path = "../img/preparos";
+const radiosPreparoRotina = document.getElementsByName("preparo");
+const radiosPreparoRessonancia = document.getElementsByName("preparo-rm");
 
-function exibePreparo() {
-    let preparo = Array.from(radiosPreparo).find(r => r.checked).id;
-    imagemPreparo.src = `${path}/${preparo}.jpg`;
+function exibePreparo(option) {
+    let path = "../img/preparos";
+    let imageTarget = "";
+    let preparo = "";
+
+    if (option === "ressonancia") {
+        path += "/ressonancia";
+        imageTarget = imagemPreparoRessonancia;
+        preparo = Array.from(radiosPreparoRessonancia).find(r => r.checked).id;
+    }
+    else if (option === "rotina") {
+        path += "/rotina";
+        imageTarget = imagemPreparoRotina;
+        preparo = Array.from(radiosPreparoRotina).find(r => r.checked).id;
+    }
+
+    imageTarget.src = `${path}/${preparo}.jpg`;
 
     /*  Faltam preparos para
         utilizar a função da
@@ -24,4 +38,5 @@ function copiarTexto(texto) {
     }, 350);
 }
 
-exibePreparo();
+exibePreparo("rotina");
+exibePreparo("ressonancia");

@@ -1,19 +1,25 @@
 main {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     background-color: #fff;
 }
 
-#formulario-preparos {
+.container-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.formulario-preparos {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-#radios-preparos-container {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.55rem;
+.radios-container {
+    line-height: 1.5rem;
 }
 
 .radio-container:hover * {
@@ -55,23 +61,20 @@ main {
     background-color: #f00;
 }
 
-#imagem-preparo-container {
+.imagem-preparo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     box-shadow: 0px 0px 15px 2px #303030;
     border: 1px solid #30303090;
     margin: 1.5rem 0;
     overflow-y: auto;
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    max-height: 80vh;
 }
 
-#imagem-preparo {
+.imagem-preparo {
     max-width: 40vw;
-}
-
-.elemento-oculto {
-    display: none;
 }
 
 input {

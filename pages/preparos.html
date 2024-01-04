@@ -11,105 +11,189 @@
 <body>
     <h1 class="titulo-iframe">Preparos de exames</h1>
     <main>
-        <form id="formulario-preparos" onchange="exibePreparo()">
-            <h2>Escolha o preparo</h2>
-            <div id="radios-preparos-container">
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="abd-total-manha"
-                        checked>
-                    <label for="abd-total-manha">Abdome total - (manhã)</label>
+        <section id="container-superior" class="container-principal">
+            <form class="formulario-preparos" id="formulario-rotina"
+                onchange="exibePreparo('rotina')">
+                <h2>Exames de rotina</h2>
+                <div class="radios-container">
+                    <div class="radio-container">
+                        <input type="radio" name="preparo" id="abd-total-manha"
+                            checked>
+                        <label for="abd-total-manha">Abdome total -
+                            (manhã)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo"
+                            id="abd-total-tarde">
+                        <label for="abd-total-tarde">Abdome total -
+                            (tarde)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo"
+                            id="abd-superior-manha">
+                        <label for="abd-superior-manha">Abdome superior -
+                            (manhã)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo"
+                            id="abd-superior-tarde">
+                        <label for="abd-superior-tarde">Abdome superior -
+                            (tarde)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo" id="abd-total-dexa">
+                        <label for="abd-total-dexa">Abdome total + DXA</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo"
+                            id="abd-superior-dexa">
+                        <label for="abd-superior-dexa">Abdome superior +
+                            DXA</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo"
+                            id="pelvica-abdominal-dexa">
+                        <label for="pelvica-abdominal-dexa">Pélvica abdominal /
+                            próstata + DXA</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo"
+                            id="pelvica-abdominal-densi2">
+                        <label for="pelvica-abdominal-densi2">Pélvica abdominal
+                            /
+                            próstata + Densitometria (2
+                            segmentos)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo" id="dexa">
+                        <label for="dexa">Densitometria de corpo inteiro
+                            (DXA)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo" id="densi2">
+                        <label for="densi2">Densitometria de coluna e fêmur (2
+                            segmentos)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo" id="densi2-dexa">
+                        <label for="densi2-dexa">Densitometria de coluna e
+                            fêmur (2
+                            segmentos) + DXA</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo" id="mamografia">
+                        <label for="mamografia">Mamografia / ultrassom
+                            mamária</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo" id="tomossintese">
+                        <label for="tomossintese">Tomossíntese</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo"
+                            id="aorta-abdominal">
+                        <label for="aorta-abdominal">Aorta abdominal</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo"
+                            id="arterias-renais">
+                        <label for="arterias-renais">Artérias renais</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo" id="veia-cava">
+                        <label for="veia-cava">Veia cava</label>
+                    </div>
                 </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="abd-total-tarde">
-                    <label for="abd-total-tarde">Abdome total - (tarde)</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="abd-superior-manha">
-                    <label for="abd-superior-manha">Abdome superior -
-                        (manhã)</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="abd-superior-tarde">
-                    <label for="abd-superior-tarde">Abdome superior -
-                        (tarde)</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="abd-total-dexa">
-                    <label for="abd-total-dexa">Abdome total + DXA</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="abd-superior-dexa">
-                    <label for="abd-superior-dexa">Abdome superior +
-                        DXA</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo"
-                        id="pelvica-abdominal-dexa">
-                    <label for="pelvica-abdominal-dexa">Pélvica abdominal /
-                        próstata + DXA</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo"
-                        id="pelvica-abdominal-densi2">
-                    <label for="pelvica-abdominal-densi2">Pélvica abdominal /
-                        próstata + Densitometria (2
-                        segmentos)</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="dexa">
-                    <label for="dexa">Densitometria de corpo inteiro
-                        (DXA)</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="densi2">
-                    <label for="densi2">Densitometria de coluna e fêmur (2
-                        segmentos)</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="densi2-dexa">
-                    <label for="densi2-dexa">Densitometria de coluna e fêmur (2
-                        segmentos) + DXA</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="mamografia">
-                    <label for="mamografia">Mamografia / ultrassom
-                        mamária</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="tomossintese">
-                    <label for="tomossintese">Tomossíntese</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="aorta-abdominal">
-                    <label for="aorta-abdominal">Aorta abdominal</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="arterias-renais">
-                    <label for="arterias-renais">Artérias renais</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" name="preparo" id="veia-cava">
-                    <label for="veia-cava">Veia cava</label>
-                </div>
+            </form>
+            <div class="imagem-preparo-container">
+                <img src="" alt="preparos em imagem" class="imagem-preparo"
+                    id="imagem-preparo-rotina"
+                    title="Arraste a imagem para dentro da conversa no Whatsapp.">
             </div>
-            <div id="link-whatsapp-container">
-                <h3 id="texto-link-whatsapp">Link para envio de documentos:
-                </h3>
-                <div id="link-whatsapp-subcontainer">
-                    <p id="link-whatsapp">https://wa.me/556132135162</p>
-                    <button type="button" id="btn-copiar-link"
-                        onclick="copiarTexto(
-                            'https://api.whatsapp.com/send/?phone=556132135162&text=Ol%C3%A1%21+Gostaria+de+iniciar+um+atendimento.&type=phone_number&app_absent=1')">
-                        Copiar link
-                    </button>
-                </div>
-            </div>
-        </form>
-        <section id="imagem-preparo-container">
-            <img src="" alt="preparos em imagem" id="imagem-preparo"
-                class="oculto"
-                title="Arraste a imagem para dentro da conversa no Whatsapp.">
         </section>
+
+        <section id="container-inferior" class="container-principal">
+            <form class="formulario-preparos" id="formulario-rm"
+                onchange="exibePreparo('ressonancia')">
+                <h2>Ressonância Magnética</h2>
+                <div class="radios-container">
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="colangio-rm-sc">
+                        <label for="colangio-rm-sc">Colângio Ressonância</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="colangio-rm-cc" checked>
+                        <label for="colangio-rm-cc">Colângio Ressonância (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="enteroressonancia-cc">
+                        <label for="enteroressonancia-cc">Enteroressonância (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-abd-total-cc">
+                        <label for="rm-abd-total-cc">RM abdome total (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-cranio-sc">
+                        <label for="rm-cranio-sc">RM crânio</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-cranio-cc">
+                        <label for="rm-cranio-cc">RM crânio (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-articulacoes-sc">
+                        <label for="rm-articulacoes-sc">RM mãos, punhos, dedos</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-articulacoes-cc">
+                        <label for="rm-articulacoes-cc">RM mãos, punhos, dedos (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-mama-cc">
+                        <label for="rm-mama-cc">RM mamas (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-sc">
+                        <label for="rm-sc">RM padrão</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-cc">
+                        <label for="rm-cc">RM padrão (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-pelve-cc">
+                        <label for="rm-pelve-cc">RM pelve (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-pelve-endometriose">
+                        <label for="rm-pelve-endometriose">RM pelve para endometriose (com contraste)</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="preparo-rm" id="rm-prostata-cc">
+                        <label for="rm-prostata-cc">RM próstata (com contraste)</label>
+                    </div>
+                </div>
+            </form>
+            <div class="imagem-preparo-container">
+                <img src="" alt="preparos em imagem" class="imagem-preparo"
+                    id="imagem-preparo-ressonancia"
+                    title="Arraste a imagem para dentro da conversa no Whatsapp.">
+            </div>
+        </section>
+
+        <!-- <div id="link-whatsapp-container">
+            <h3 id="texto-link-whatsapp">Link para envio de documentos:
+            </h3>
+            <div id="link-whatsapp-subcontainer">
+                <p id="link-whatsapp">https://wa.me/556132135162</p>
+                <button type="button" id="btn-copiar-link"
+                onclick="copiarTexto(
+                            'https://api.whatsapp.com/send/?phone=556132135162&text=Ol%C3%A1%21+Gostaria+de+iniciar+um+atendimento.&type=phone_number&app_absent=1')">
+                    Copiar link
+                </button>
+            </div>
+        </div> -->
     </main>
     <script src="../js/preparos.js"></script>
 </body>
