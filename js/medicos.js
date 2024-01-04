@@ -1,6 +1,8 @@
 const medicosNaTabela = document.querySelectorAll(".td-medico");
 const imagemEscala = document.querySelector("#imagem-escala");
 const observacoes = document.querySelectorAll(".observacoes");
+const labels = document.querySelectorAll(".input-container > label");
+const labelsDefaultColor = labels[0].style.color;
 
 class Medico {
     constructor(nome, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias) {
@@ -47,8 +49,8 @@ function adicionarMedico(nome, sexo, unidade, especialidade, tipoRegistro, numer
 }
 
 function exibeObservacoes(medico) {
-    for(let div of observacoes) {        
-        if(div.id !== `observacoes-${medico.seletor}`) {
+    for (let div of observacoes) {
+        if (div.id !== `observacoes-${medico.seletor}`) {
             if (!div.classList.contains("oculto")) {
                 div.classList.add("oculto");
             }
@@ -78,6 +80,9 @@ function exibeInformacao() {
     medico.sexo === "M" ? iconeMedico.src = "../img/medico.png" : iconeMedico.src = "../img/medica.png";
     unidade.textContent = medico.unidade;
     exibeObservacoes(medico);
+    labels.forEach((label) => {
+        label.control.checked === true ? label.style.color = "#fff" : label.style.color = labelsDefaultColor;
+    });
 }
 
 // TODO: trazer informações de médicos via JSON
@@ -410,6 +415,6 @@ adicionarMedico(
     numeroRegistro = "2920",
     seletor = "dra-yara",
     categorias = [0]);
-    
+
 // TODO: adicionar inputs de médicos via script
 exibeInformacao()
