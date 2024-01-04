@@ -22,6 +22,10 @@ main {
     line-height: 1.5rem;
 }
 
+.titulo-radios {
+    color: var(--red);
+}
+
 .radio-container:hover * {
     cursor: pointer;
 }
