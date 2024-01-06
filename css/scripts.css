@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    height: 100vh;
+}
+
+aside {
+    padding: 10px;
+    background-color: var(--red);
+    height: 90vh;
+    width: 20vw;
+    justify-self: flex-start;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: 0 auto;
+}
