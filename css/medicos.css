@@ -106,3 +106,12 @@ label:hover {
     margin: 1rem auto;
     border: 1px solid #000;
 }
+
+table * {
+    text-align: center;
+    border: 1px solid #000;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}

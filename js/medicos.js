@@ -17,25 +17,15 @@ class Medico {
     }
 
     getCategorias() {
-        let lista = [];
-        for (let categoria of this.categorias) {
-            switch (categoria) {
-                case 0: lista.push("ecografia");
-                    break;
-                case 1: lista.push("mamografia");
-                    break;
-                case 2: lista.push("densitometria");
-                    break;
-                case 3: lista.push("ressonância");
-                    break;
-                case 4: lista.push("somente laudos");
-                    break;
-                case 5: lista.push("consulta nutricional");
-                    break;
-                case 6: lista.push("tomossíntese");
-                    break;
-                default: return;
-            }
+        let lista = []
+        let categorias = [
+            "ecografia", "mamografia",
+            "densitometria", "ressonância",
+            "laudo ressonância", "consulta nutricional",
+            "tomossíntese"];
+            
+        for (let index of this.categorias) {
+            lista.push(categorias[index])
         }
         return lista.join(", ");
     }
