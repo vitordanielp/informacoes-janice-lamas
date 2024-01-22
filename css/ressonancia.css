@@ -70,6 +70,42 @@
     font-size: 1.05rem;
 }
 
+/* Indicativos de contraste */
+#indicativos-de-contraste {
+    background-color: var(--red);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bloco-indicativo {
+    background-color: #fff;
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: .3rem;
+    color: var(--dark-grey);
+    margin: 2rem auto;
+    border-radius: 8px;
+    min-height: 160px;
+    min-width: 230px;
+    padding: 1rem;
+}
+
+.bloco-indicativo h3 {
+    text-align: center;
+    color: var(--dark-grey);
+}
+
+.bloco-indicativo i {
+    font-size: .9rem;
+}
+
+.bloco-indicativo ul li {
+    list-style: inside;
+}
+
 /* Ressonancias no mesmo dia */
 #ressonancias-mesmo-dia {
     color: var(--white);
@@ -134,7 +170,7 @@ ul {
     justify-content: space-between;
     padding: 4px;
     background-color: var(--white);
-    width: 20dvw;
+    width: 25dvw;
     height: 20dvw;
     box-shadow: 5px 5px 8px #30303090;
     margin: 0 auto;
