@@ -7,53 +7,13 @@
     align-items: center;
 }
 
-.informacoes-container {
-    background-color: var(--red);
-    color: #fff;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 5px 5px 8px #30303090;
-    border-radius: 8px;
-    margin: 1rem auto;
-    padding: 1rem;
-}
-
-.subtitulo-informacoes {
-    font-size: 1.5rem;
-    line-height: 3rem;
-    text-align: center;
-}
-
-.texto-informacoes {
-    font-size: 1.2rem;
-}
-
-.bloco {
-    max-width: 62vw;
-    margin-bottom: 2rem;
-}
-
-.observacao {
-    font-style: italic;
-    text-align: center;
-    color: #101010;
-    background-color: #ffff00ba;
-}
-
-h3 {
-    font-size: 1rem;
-}
-
 #tabela-convenios-mamografia {
     background-color: #000;
     border-spacing: 1px;
     text-align: center;
     width: 65vw;
     font-size: .9rem;
-    margin-top: 10px;
+    margin: 10px auto;
     user-select: none;
 }
 
@@ -74,4 +34,18 @@ h3 {
 .tr-somente-tecnica {
     background-color: #b00;
     color: #fdfdfd;
+}
+
+/* Imagens protocolos */
+
+#protocolos-container {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+}
+
+.protocolo {
+    width: 30vw;
+    margin: 1rem 2.5vw;
+    box-shadow: 0 0 8px #888;
 }
