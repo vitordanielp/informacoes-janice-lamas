@@ -92,10 +92,6 @@ label:hover {
     text-align: left;
 }
 
-.oculto {
-    display: none;
-}
-
 #escalas-medicas-container {
     display: flex;
     flex-direction: column;
@@ -107,11 +103,17 @@ label:hover {
     border: 1px solid #000;
 }
 
-table * {
+.tabela-escala * {
     text-align: center;
     border: 1px solid #000;
-    border-spacing: 0px;
-    border-collapse: collapse;
     margin: 0;
     padding: 0;
+}
+
+.tabela-escala {
+    border-collapse: collapse;
+}
+
+.oculto {
+    display: none;
 }

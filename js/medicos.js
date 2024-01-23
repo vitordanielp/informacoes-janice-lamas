@@ -5,8 +5,9 @@ const labels = document.querySelectorAll(".input-container > label");
 const labelsDefaultColor = labels[0].style.color;
 
 class Medico {
-    constructor(nome, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias) {
+    constructor(nome, nomeExibido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias) {
         this.nome = nome;
+        this.nomeExibido = nomeExibido;
         this.sexo = sexo;
         this.unidade = unidade;
         this.especialidade = especialidade;
@@ -33,8 +34,8 @@ class Medico {
 
 const medicos = []
 
-function adicionarMedico(nome, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias) {
-    const medico = new Medico(nome, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias);
+function adicionarMedico(nome, nomeExibido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias) {
+    const medico = new Medico(nome, nomeExibido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias);
     medicos.push(medico);
 }
 
@@ -67,7 +68,7 @@ function exibeInformacao() {
     numeroRegistro.textContent = medico.numeroRegistro;
     especialidade.textContent = medico.especialidade;
     categoria.textContent = medico.getCategorias();
-    medico.sexo === "M" ? iconeMedico.src = "../img/medico.png" : iconeMedico.src = "../img/medica.png";
+    medico.sexo === "M" ? iconeMedico.src = "../img/medicos/avatares/medico.png" : iconeMedico.src = "../img/medicos/avatares/medica.png";
     unidade.textContent = medico.unidade;
     exibeObservacoes(medico);
     labels.forEach((label) => {
@@ -78,6 +79,7 @@ function exibeInformacao() {
 // TODO: trazer informações de médicos via JSON
 adicionarMedico(
     nome = "Adriana Dias de Farias Figueiredo",
+    nomeExibido = "Adriana Dias",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "ginecologista",
@@ -88,6 +90,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Adriana Sousa Freire",
+    nomeExibido = "Adriana Freire",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -98,6 +101,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Alessandra Cerri Bertolino Fonseca",
+    nomeExibido = "Alessandra Cerri",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -108,6 +112,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Alexander Tavares Daud",
+    nomeExibido = "Alexander Daud",
     sexo = "M",
     unidade = "asa sul",
     especialidade = "angiologista",
@@ -118,6 +123,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Alexandra Ferreira Silva",
+    nomeExibido = "Alexandra Silva",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -128,6 +134,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Aline Catunda de Clodoaldo Pinto",
+    nomeExibido = "Aline Catunda",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -138,6 +145,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Amanda Assis da Silva Lima",
+    nomeExibido = "Amanda Assis",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -148,6 +156,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Ana Lívia Prado de Meneses Lopes",
+    nomeExibido = "Ana Lívia",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -158,6 +167,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Carla Maria da Silva Araújo",
+    nomeExibido = "Carla Araújo",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -168,6 +178,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Carla Concolato",
+    nomeExibido = "Carla Concolato",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -178,6 +189,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Henrique Metzger",
+    nomeExibido = "Henrique",
     sexo = "M",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -188,6 +200,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Iris Gardênia Cavalca e Silva",
+    nomeExibido = "Iris Gardênia",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "mastologista",
@@ -198,6 +211,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Janice Magalhães Lamas",
+    nomeExibido = "Janice Lamas",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -208,6 +222,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Juliana Catão Grisi",
+    nomeExibido = "Juliana Catão",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "mastologista",
@@ -218,6 +233,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Larissa Ravila Sacch de Oliveira",
+    nomeExibido = "Larissa Ravila",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -228,6 +244,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Lorena Francisca Moura de Freitas Carvalho",
+    nomeExibido = "Lorena Francisca",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -238,6 +255,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Marcelo Bittencourt Barreiros",
+    nomeExibido = "Marcelo Barreiros",
     sexo = "M",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -248,6 +266,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Márcia Cristina Dias da Costa",
+    nomeExibido = "Márcia Cristina",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -258,6 +277,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Marcia Da Rocha Carneiro Barreiros",
+    nomeExibido = "Marcia Barreiros",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -268,6 +288,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Márcia Laporte",
+    nomeExibido = "Márcia Laporte",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -278,6 +299,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Melissa Severo De Brito",
+    nomeExibido = "Melissa Severo",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -288,6 +310,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Mirley Do Prado",
+    nomeExibido = "Mirley Do Prado",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -298,6 +321,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Oliviane Basílio D'Oliveira de Teixeira",
+    nomeExibido = "Oliviane Basílio",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -308,6 +332,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Osmar Pellegrini Júnior",
+    nomeExibido = "Osmar Pellegrini",
     sexo = "M",
     unidade = "asa sul",
     especialidade = "mastologista",
@@ -318,6 +343,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Priscilla Abdalla Cruz",
+    nomeExibido = "Priscilla Abdalla",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -328,6 +354,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Renata Cristina Silva Trinta",
+    nomeExibido = "Renata Trinta",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -338,6 +365,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Renata Tavazzi Estrela",
+    nomeExibido = "Renata Estrela",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -348,6 +376,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Sádja Sammara Gamma Rodrigues",
+    nomeExibido = "Sádja Sammara",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -358,6 +387,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Sérgio Eduardo Costa Sampaio",
+    nomeExibido = "Sérgio Sampaio",
     sexo = "M",
     unidade = "lago sul",
     especialidade = "ginecologista",
@@ -368,6 +398,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Silvio Braz de Paixão",
+    nomeExibido = "Silvio Braz",
     sexo = "M",
     unidade = "asa sul",
     especialidade = "ginecologista",
@@ -378,6 +409,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Thaís Magalhães Lamas",
+    nomeExibido = "Thaís Lamas",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "nutricionista",
@@ -388,6 +420,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Thays Vieira De Vasconcelos Sousa",
+    nomeExibido = "Thays Vieira",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
@@ -398,6 +431,7 @@ adicionarMedico(
 
 adicionarMedico(
     nome = "Yara Cristina Rocha Tanezini",
+    nomeExibido = "Yara Cristina",
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
