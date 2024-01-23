@@ -472,17 +472,17 @@ adicionarMedico(
     categorias = [0]
 );
 
-adicionarMedico(
-    nome = "Médico Teste 01",
-    nomeExibido = "Médico Teste 01",
-    sexo = "M",
-    unidade = "asa sul",
-    especialidade = "radiologista",
-    tipoRegistro = "CRM",
-    numeroRegistro = "3080",
-    seletor = "medico-teste",
-    categorias = [0]
-);
+// adicionarMedico(
+//     nome = "Médico Teste 01",
+//     nomeExibido = "Médico Teste 01",
+//     sexo = "M",
+//     unidade = "asa sul",
+//     especialidade = "radiologista",
+//     tipoRegistro = "CRM",
+//     numeroRegistro = "3080",
+//     seletor = "medico-teste",
+//     categorias = [0]
+// );
 
 
 function adicionarInputMedico(medico) {
