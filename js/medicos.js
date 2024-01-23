@@ -1,8 +1,8 @@
 const medicosNaTabela = document.querySelectorAll(".td-medico");
 const imagemEscala = document.querySelector("#imagem-escala");
 const observacoes = document.querySelectorAll(".observacoes");
-const labels = document.querySelectorAll(".input-container > label");
-const labelsDefaultColor = labels[0].style.color;
+const lateralForm = document.querySelector("#lateral-form");
+let inputs, labels, labelsDefaultColor;
 
 class Medico {
     constructor(nome, nomeExibido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias) {
@@ -24,7 +24,7 @@ class Medico {
             "densitometria", "ressonância",
             "laudo ressonância", "consulta nutricional",
             "tomossíntese"];
-            
+
         for (let index of this.categorias) {
             lista.push(categorias[index])
         }
@@ -35,8 +35,7 @@ class Medico {
 const medicos = []
 
 function adicionarMedico(nome, nomeExibido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias) {
-    const medico = new Medico(nome, nomeExibido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias);
-    medicos.push(medico);
+    medicos.push(new Medico(nome, nomeExibido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias));
 }
 
 function exibeObservacoes(medico) {
@@ -86,7 +85,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "19607",
     seletor = "dra-adriana-dias",
-    categorias = [0, 1]);
+    categorias = [0, 1]
+);
 
 adicionarMedico(
     nome = "Adriana Sousa Freire",
@@ -97,7 +97,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "21125",
     seletor = "dra-adriana-freire",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Alessandra Cerri Bertolino Fonseca",
@@ -108,7 +109,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "21585",
     seletor = "dra-alessandra",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Alexander Tavares Daud",
@@ -119,7 +121,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "11981",
     seletor = "dr-alexander",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Alexandra Ferreira Silva",
@@ -130,7 +133,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "11300",
     seletor = "dra-alexandra",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Aline Catunda de Clodoaldo Pinto",
@@ -141,7 +145,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "17972",
     seletor = "dra-aline",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Amanda Assis da Silva Lima",
@@ -152,7 +157,8 @@ adicionarMedico(
     tipoRegistro = "21116",
     numeroRegistro = "CRM",
     seletor = "dra-amanda",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Ana Lívia Prado de Meneses Lopes",
@@ -163,7 +169,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "19148",
     seletor = "dra-ana-livia",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Carla Maria da Silva Araújo",
@@ -174,7 +181,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "14935",
     seletor = "dra-carla-maria",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Carla Concolato",
@@ -185,7 +193,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "22066",
     seletor = "dra-carla-concolato",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Henrique Metzger",
@@ -196,7 +205,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "17411",
     seletor = "dr-henrique",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Iris Gardênia Cavalca e Silva",
@@ -207,7 +217,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "10842",
     seletor = "dra-iris",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Janice Magalhães Lamas",
@@ -218,7 +229,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "3570",
     seletor = "dra-janice",
-    categorias = [6]);
+    categorias = [6]
+);
 
 adicionarMedico(
     nome = "Juliana Catão Grisi",
@@ -229,7 +241,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "11295",
     seletor = "dra-juliana",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Larissa Ravila Sacch de Oliveira",
@@ -240,7 +253,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "19687",
     seletor = "dra-larissa",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Lorena Francisca Moura de Freitas Carvalho",
@@ -251,7 +265,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "8214",
     seletor = "dra-lorena",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Marcelo Bittencourt Barreiros",
@@ -262,7 +277,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "7203",
     seletor = "dr-marcelo",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Márcia Cristina Dias da Costa",
@@ -273,7 +289,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "4906",
     seletor = "dra-marcia-cristina",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Marcia Da Rocha Carneiro Barreiros",
@@ -284,7 +301,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "7697",
     seletor = "dra-marcia-barreiros",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Márcia Laporte",
@@ -295,7 +313,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "28342",
     seletor = "dra-marcia-laporte",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Melissa Severo De Brito",
@@ -306,7 +325,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "30978",
     seletor = "dra-melissa",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Mirley Do Prado",
@@ -317,7 +337,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "7591",
     seletor = "dra-mirley",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Oliviane Basílio D'Oliveira de Teixeira",
@@ -328,7 +349,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "5375",
     seletor = "dra-oliviane",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Osmar Pellegrini Júnior",
@@ -339,7 +361,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "21768",
     seletor = "dr-osmar",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Priscilla Abdalla Cruz",
@@ -350,7 +373,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "24132",
     seletor = "dra-priscilla",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Renata Cristina Silva Trinta",
@@ -361,7 +385,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "11595",
     seletor = "dra-renata-trinta",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Renata Tavazzi Estrela",
@@ -372,7 +397,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "11609",
     seletor = "dra-renata-estrela",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Sádja Sammara Gamma Rodrigues",
@@ -383,7 +409,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "14834",
     seletor = "dra-sadja",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Sérgio Eduardo Costa Sampaio",
@@ -394,7 +421,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "4414",
     seletor = "dr-sergio",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Silvio Braz de Paixão",
@@ -405,7 +433,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "10605",
     seletor = "dr-silvio",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Thaís Magalhães Lamas",
@@ -416,7 +445,8 @@ adicionarMedico(
     tipoRegistro = "CRN/DF",
     numeroRegistro = "2559",
     seletor = "dra-thais-lamas",
-    categorias = [5]);
+    categorias = [5]
+);
 
 adicionarMedico(
     nome = "Thays Vieira De Vasconcelos Sousa",
@@ -427,7 +457,8 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "23969",
     seletor = "dra-thays-vieira",
-    categorias = [0]);
+    categorias = [0]
+);
 
 adicionarMedico(
     nome = "Yara Cristina Rocha Tanezini",
@@ -438,7 +469,46 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "2920",
     seletor = "dra-yara",
-    categorias = [0]);
+    categorias = [0]
+);
 
-// TODO: adicionar inputs de médicos via script
-exibeInformacao()
+adicionarMedico(
+    nome = "Médico Teste 01",
+    nomeExibido = "Médico Teste 01",
+    sexo = "M",
+    unidade = "asa sul",
+    especialidade = "radiologista",
+    tipoRegistro = "CRM",
+    numeroRegistro = "3080",
+    seletor = "medico-teste",
+    categorias = [0]
+);
+
+
+function adicionarInputMedico(medico) {
+    let novaDiv = document.createElement("div");
+    let novoInput = document.createElement("input");
+    let novoLabel = document.createElement("label");
+    novaDiv.classList.add("input-container");
+    novoInput.setAttribute("type", "radio");
+    novoInput.setAttribute("name", "input-medico");
+    novoInput.setAttribute("id", medico.seletor);
+    novoLabel.setAttribute("for", medico.seletor);
+
+    lateralForm.appendChild(novaDiv);
+    novaDiv.appendChild(novoInput);
+    novaDiv.appendChild(novoLabel);
+    novoLabel.textContent = medico.nomeExibido;
+}
+
+function adicionarInputs() {
+    for (let medico of medicos) {
+        adicionarInputMedico(medico);
+    }
+    labels = document.querySelectorAll(".input-container > label");
+    labelsDefaultColor = labels[0].style.color;
+    document.querySelector(".input-container > input").checked = true;
+}
+
+adicionarInputs();
+exibeInformacao();

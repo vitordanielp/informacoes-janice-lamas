@@ -28,8 +28,11 @@
 .input-container {
     font-size: 1rem;
 }
+
 .input-container input {
-    height: 10px;
+    height: 11px;
+    margin-right: 3px;
+    line-height: 12px;
 }
 
 label:hover {
