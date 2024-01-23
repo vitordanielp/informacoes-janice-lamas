@@ -10,7 +10,6 @@ quadros.forEach((quadro) => quadro.addEventListener("click", () => {
             popup.style.display = "flex";
             document.querySelector("#header-principal").classList.add("desfocado");
             document.querySelector("#main-container").classList.add("desfocado");
-            document.querySelector("#footer-principal").classList.add("desfocado");
         }
     }
 }));
@@ -24,5 +23,4 @@ function fecharPopup() {
     popup.style.display = "none";
     document.querySelector("#header-principal").classList.remove("desfocado");
     document.querySelector("main").classList.remove("desfocado");
-    document.querySelector("#footer-principal").classList.remove("desfocado");
 }
