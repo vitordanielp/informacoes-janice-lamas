@@ -1,7 +1,44 @@
-.titulo-tabela {
+:root {
+    --dark: #222;
+}
+
+#tabela-autorizacao {
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #000;
     text-transform: uppercase;
 }
 
+td,
+th {
+    border: 1px solid #000;
+    background-color: var(--dark);
+    width: 32vw;
+}
+
+td {
+    color: var(--white);
+    font-size: 90%;
+}
+
+.bloco-tabela {
+    height: 42vh;
+}
+
+.titulo-tabela {
+    background-color: var(--yellow);
+    line-height: 1.5rem;
+    color: var(--dark);
+}
+
 .nome-autorizador {
-    text-transform: capitalize;
+    background-color: var(--red);
+    color: #000;
+    height: 1.3rem;
+}
+
+.vazio {
+    background-color: #333333b0;
+    border: none;
 }

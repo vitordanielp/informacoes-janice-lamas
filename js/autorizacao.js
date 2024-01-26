@@ -1,5 +1,5 @@
 const listaAutorizadores = [];
-const qntGrupos = 2;
+const grupos = document.querySelectorAll(".bloco-tabela");
 
 
 class Autorizador {
@@ -24,11 +24,11 @@ function incluirAutorizador(nome, convenios) {
 
 
 /* Adicionando autorizadores */
-incluirAutorizador(nome = "gisele sandra", convenios = ["affego", "camara", "capesesp", "geap", "tre", "trf"]);
-incluirAutorizador(nome = "ana paula", convenios = ["amhp", "assefaz", "casembrapa", "medservice (careplus e omint)", "mpu", "proasa", "stf", "unafisco"]);
-incluirAutorizador(nome = "ana ribeiro", convenios = ["amil", "bacen", "conab", "evida", "gdf", "infraero", "petrobras", "tjdft", "tst"]);
-incluirAutorizador(nome = "jacke rodrigues", convenios = ["bradesco", "brb", "caesan", "casec", "serpro", "sis", "sul america", "unimed"]);
 incluirAutorizador(nome = "silas sampaio", convenios = ["caixa (rm)", "cassi", "fascal", "gama saude", "policia federal", "postal saude", "stj", "stm", "trt (rm)"]);
+incluirAutorizador(nome = "ana ribeiro", convenios = ["amil", "bacen", "conab", "evida", "gdf", "infraero", "petrobras", "tjdft", "tst"]);
+incluirAutorizador(nome = "gisele sandra", convenios = ["affego", "camara", "capesesp", "geap", "tre", "trf"]);
+incluirAutorizador(nome = "jacke rodrigues", convenios = ["bradesco", "brb", "caesan", "casec", "serpro", "sis", "sul america", "unimed"]);
+incluirAutorizador(nome = "ana paula", convenios = ["amhp", "assefaz", "casembrapa", "medservice (careplus e omint)", "mpu", "proasa", "stf", "unafisco"]);
 incluirAutorizador(nome = "raquel almeida", convenios = ["gestao de agendas", "acompanhamento da ressonancia"]);
 
 
@@ -37,61 +37,63 @@ function exibirNome(autorizador) {
     /* Localiza elemento correspondente
     ao ID do autorizador recebido e exibe
     seu nome no local correto da tabela */
-    const target = document.querySelector("#autorizador-" + autorizador.id);
+    const target = document.querySelector(`#autorizador-${autorizador.id}`);
     target.textContent = autorizador.nome;
 }
 
 
 function exibirConvenios(autorizador) {
     for (index in autorizador.convenios) {
-        if (document.querySelector(`#linha-${autorizador.convenios.length - 1}`)) {
-            let target = document.querySelector(`#tbody-${autorizador.grupo} > #linha-${index} > .coluna-${autorizador.id}`);
-            target.textContent = autorizador.convenios[index];
-        }
-
+        let grupo = autorizador.grupo;
+        let target = document.querySelector(`#tbody-${grupo} > #tbody-${grupo}-linha-${index} > .coluna-${autorizador.id}`);
+        target.textContent = autorizador.convenios[index];
     }
 }
-
-
-function incluirColunas() {
-    let qntColunas = listaAutorizadores.length / qntGrupos;
-    let td = document.createElement("td");
-    const linhas = document.querySelectorAll(".linha-convenios")
-    for (linha of linhas) {
-
-    }
-}
-
-
-/* 
-TODO: resolver forma de adicionar
-as linhas e colunas de acordo com
-a quantidade necessária para cada
-grupo de autorizadores
- */
 
 
 function incluirLinhas() {
-    let qntLinhas = 0;
     for (let autorizador of listaAutorizadores) {
-        if (autorizador.convenios.length > qntLinhas + 1) {
-            qntLinhas = autorizador.convenios.length;
+        const grupo = document.querySelector(`#tbody-${autorizador.grupo}`);
+        let qntLinhas = grupo.childElementCount;
+
+        while (qntLinhas <= autorizador.convenios.length) {
+            let row = document.createElement("tr");
+            row.setAttribute("id", `${grupo.id}-linha-${qntLinhas - 1}`);
+            row.setAttribute("class", "linha-tabela");
+            grupos[autorizador.grupo].appendChild(row);
+            for (let i = 0; i <= 2; i++) {
+                if (autorizador.grupo == 0) {
+                    row.appendChild(adicionarColuna(i));
+                }
+                else {
+                    row.appendChild(adicionarColuna(i + 3));
+                }
+            }
+            qntLinhas++;
         }
     }
-    for (let i = 0; i <= qntLinhas; i++) {
-        let row = document.createElement("tr");
-        row.setAttribute("id", `linha-${i}`);
-    }
+}
+
+
+function adicionarColuna(index) {
+    let td = document.createElement("td");
+    td.setAttribute("class", `coluna-${index}`);
+    return td;
 }
 
 
 function preencherTabela() {
     /* Executa as funções necessárias para preencher tabela */
     incluirLinhas();
-    incluirColunas();
     for (let autorizador of listaAutorizadores) {
         exibirNome(autorizador);
         exibirConvenios(autorizador);
+    }
+    const tableDatas = document.querySelectorAll("td");
+    for(data of tableDatas) {
+        if(!data.textContent) {
+            data.classList.add("vazio");
+        }
     }
 }
 
