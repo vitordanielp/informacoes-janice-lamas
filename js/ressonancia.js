@@ -9,6 +9,6 @@ function novaImagem(src) {
 
 
 for (let i = 1; i <= 14; i++) {
-    let pathAtual = path + `Slide${i}.jpg`;
+    let pathAtual = path + `Slide${i}.JPG`;
     areaTreinamentos.innerHTML += novaImagem(pathAtual);
 }
