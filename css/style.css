@@ -14,8 +14,8 @@ body {
 #header-principal {
     color: var(--white);
     text-align: center;
-    height: 8vh;
     line-height: 8vh;
+    height: 8vh;
     background-color: var(--red);
     font-size: .8rem;
 }
@@ -27,27 +27,26 @@ main {
 
 /* Quadros de informações */
 #quadros-container {
-    width: 70vw;
-    height: 92vh;
+    width: 80vw;
+    min-height: 92vh;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2vh 0;
 }
 
 .quadro {
     text-decoration: none;
     color: var(--white);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     background-color: var(--red);
-    margin: 2.5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
-    width: 20vw;
+    height: 20vh;
+    width: 22vw;
     border-radius: 1.25rem;
     text-align: center;
     cursor: pointer;
@@ -55,7 +54,7 @@ main {
 }
 
 .quadro:hover {
-    font-size: 1.48rem;
+    font-size: 1.3rem;
     filter: drop-shadow(5px 5px 8px #888) brightness(130%);
     transition: 350ms;
 }
@@ -69,10 +68,10 @@ main {
     display: none;
     flex-direction: row;
     position: fixed;
-    top: 10vh;
-    left: 12vw;
-    height: 80vh;
-    width: 75vw;
+    top: 6vh;
+    left: 11vw;
+    height: 90vh;
+    width: 78vw;
     margin: 0 auto;
     background: #343a40f0;
     border-radius: 25px;
@@ -82,7 +81,7 @@ main {
 
 #iframe-principal {
     width: 100%;
-    max-height: 78vh;
+    max-height: 82vh;
 }
 
 #botao-fechar-popup {
@@ -98,11 +97,46 @@ main {
     z-index: -1;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
+    #header-principal {
+        line-height: 5vh;
+        font-size: 1rem;
+    }
+
+    #quadros-container {
+        width: auto;
+    }
+
     .quadro {
-      font-size: .8rem;
+        width: 45vw;
+        margin: .5rem 0;
     }
+
+    body {
+        width: auto;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    #header-principal {
+        height: 12vh;
+        line-height: 12vh;
+        font-size: .7rem;
+    }
+
+    #quadros-container {
+        min-height: 400px;
+    }
+
+    .quadro {
+        height: 22vh;
+        min-height: 80px;
+        font-size: .9rem;
+        margin: .2rem 0;
+    }
+
     .quadro:hover {
-      font-size: .9rem;
+        font-size: 1rem;
     }
-  }
+
+}
