@@ -15,13 +15,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #fff;
 }
 
 #navigation a {
     text-decoration: none;
     width: 25%;
     transition: all 300ms;
+    color: #fff;
 }
 
 #navigation a:visited {
