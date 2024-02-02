@@ -1,27 +1,40 @@
 main {
-    display: flex;
-    align-items: center;
-    background-color: var(--white);
-    height: 100vh;
-}
-
-aside {
-    padding: 10px;
-    background-color: var(--red);
-    height: 90vh;
-    width: 20vw;
-    justify-self: flex-start;
-}
-
-aside h2 {
     text-align: center;
+    background-color: var(--white);
 }
 
-form {
+header {
+    text-align: center;
+    background-color: var(--red);
+    line-height: 12vh;
+    font-size: 1.1rem;
+}
+
+#navigation {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
 }
 
-section {
+#navigation a {
+    text-decoration: none;
+    width: 25%;
+    transition: all 300ms;
+}
+
+#navigation a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+#navigation a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#image-script {
     margin: 0 auto;
+    width: 70vw;
 }
