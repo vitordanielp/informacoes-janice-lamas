@@ -21,11 +21,6 @@ function exibePreparo(option) {
     }
 
     imageTarget.src = `${path}/${preparo}.jpg`;
-
-    /*  Faltam preparos para
-        utilizar a função da
-        forma correta.
-     */
 }
 
 function copiarTexto(texto) {
