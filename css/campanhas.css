@@ -1,0 +1,92 @@
+@import url(marcacao.css);
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+table {
+    background-color: antiquewhite;
+    border-collapse: collapse;
+    margin: 5vh auto;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid #000;
+    font-size: .8rem;
+    padding: 1.5px;
+}
+
+#outubro-rosa th {
+    color: #ff0072;
+}
+
+#novembro-azul th {
+    color: #0d47a1;
+}
+
+.titulo-campanha th {
+    border: none;
+}
+
+.titulo-campanha img {
+    max-width: 32px;
+    border: none;
+}
+
+.bloco-tabela {
+    box-shadow: 0 0 5px 1px #303030;
+}
+
+.bloco-tabela th {
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 4px;
+}
+
+#titulo-outubro-rosa {
+    background-color: #ffd0e5;
+}
+
+.feminino-1 {
+    background-color: #ff8bbf;
+}
+
+.feminino-2 {
+    background-color: #ffa2cb;
+}
+
+.feminino-3 {
+    background-color: #ffb9d8;
+}
+
+.feminino-4 {
+    background-color: #ffd0e5;
+}
+
+#titulo-novembro-azul {
+    background-color: #e3f2fd;
+}
+
+.masculino-1 {
+    background-color: #42a5f5;
+}
+
+.masculino-2 {
+    background-color: #64b5f6;
+}
+
+.masculino-3 {
+    background-color: #90caf9;
+}
+
+.masculino-4 {
+    background-color: #bbdefb;
+}
