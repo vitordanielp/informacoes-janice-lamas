@@ -18,8 +18,8 @@
     box-shadow: 5px 5px 8px #30303090;
 }
 
-#lateral-form p {
-    font-size: large;
+#lateral-form h2 {
+    font-size: 1.2rem;
     color: var(--white);
     text-align: center;
     line-height: 2rem;
@@ -78,21 +78,26 @@ label:hover {
 
 #observacoes-container {
     border: 1px solid #000;
-    width:  63vw;
+    min-width: 45vw;
+    max-width: 60vw;
     margin: 1rem auto;
     padding: 10px 0;
 }
 
 #observacoes-container h3 {
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     color: var(--red);
 }
 
 .observacoes {
-    max-width: 98%;
+    padding: 0 4px;
     margin: 0 auto;
     text-align: left;
+}
+
+.observacoes > ul, ol{
+    list-style: inside decimal;
 }
 
 #escalas-medicas-container {
