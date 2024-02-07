@@ -300,11 +300,11 @@ adicionarMedico(
 <br>
 <p><b>Estadiamento de hidradenite supurativa:</b></p>
 <ol>
-    <li>Segmento: <b>R$: 1.200,00</b> / 60 minutos
-    <li>Segmentos: <b>R$: 2.000,00</b> / 120 minutos
-    <li>Segmentos: <b>R$: 2.800,00</b> / 180 minutos
-    <li>Segmentos: <b>R$: 3.600,00</b> / 180 minutos
-    <li>Segmentos: <b>R$: 4.400,00</b> / 180 minutos
+    <li>Segmento: <b>R$: 700,00</b> / 60 minutos
+    <li>Segmentos: <b>R$: 1.225,00</b> / 90 minutos
+    <li>Segmentos: <b>R$: 1.400,00</b> / 120 minutos
+    <li>Segmentos: <b>R$: 1.750,00</b> / 150 minutos
+    <li>Segmentos: <b>R$: 2.100,00</b> / 180 minutos
 </ol>
 `
 );
