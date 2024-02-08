@@ -94,6 +94,7 @@ label:hover {
     padding: 0 4px;
     margin: 0 auto;
     text-align: left;
+    font-size: .9rem;
 }
 
 .observacoes > ul, ol{
