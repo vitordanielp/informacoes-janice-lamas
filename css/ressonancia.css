@@ -11,6 +11,7 @@ main {
     background-color: #fff;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem 0;
@@ -78,18 +79,20 @@ main {
 #indicativos-de-contraste {
     background-color: var(--red);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .bloco-indicativo {
     background-color: #fff;
-    max-width: 30vw;
+    max-width: 40vw;
+    min-width: 270px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     color: var(--dark-grey);
-    margin: 2rem 0;
+    margin: 1rem auto;
     border-radius: 8px;
     min-height: 150px;
     padding: 1rem;
@@ -124,10 +127,15 @@ h2 {
 
 #listas-mesmo-dia-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 70vw;
+    max-width: 80vw;
     margin: 0 auto;
     margin-bottom: 1.5rem;
+}
+
+#listas-mesmo-dia-container ul {
+    min-width: fit-content;
 }
 
 .titulo-permissoes {
@@ -173,7 +181,9 @@ ul {
     padding: 4px;
     background-color: var(--white);
     width: 25dvw;
+    min-width: 200px;
     height: 20dvw;
+    min-height: 180px;
     box-shadow: 5px 5px 8px #30303090;
     margin: 0 auto;
     border-radius: 3px;
@@ -213,4 +223,41 @@ ul {
     max-height: 94vh;
     margin: 5px auto;
     box-shadow: 5px 5px 8px #10101090;
+}
+
+@media screen and (max-width: 1024px) {
+    #listas-mesmo-dia-container ul {
+        margin: 1rem auto;
+        min-width: 320px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bloco-indicativo {
+        font-size: .9rem;
+        /* min-width: 250px; */
+        margin: .5rem auto;
+    }
+
+    #titulo-rn-mesmo-dia {
+        line-height: 2.5rem;
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .titulo-permissoes {
+        line-height: .5rem;
+        margin-top: 1.5rem;
+    }
+
+    .observacao {
+        font-size: .95rem;
+        padding: 0 1rem;
+    }
+
+    #quadros-cuidados-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: .1rem;
+    }
 }
