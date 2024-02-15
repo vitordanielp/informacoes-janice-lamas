@@ -17,7 +17,7 @@ body {
     line-height: 8vh;
     height: 8vh;
     background-color: var(--red);
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 main {
@@ -47,6 +47,7 @@ main {
     align-items: center;
     height: 20vh;
     width: 22vw;
+    min-width: 250px;
     border-radius: 1.25rem;
     text-align: center;
     cursor: pointer;
@@ -97,7 +98,7 @@ main {
     z-index: -1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 920px) {
     #header-principal {
         line-height: 5vh;
         font-size: 1rem;
@@ -110,10 +111,41 @@ main {
     .quadro {
         width: 45vw;
         margin: .5rem 0;
+        font-size: 1.8rem;
     }
 
     body {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #main-container {
+        box-shadow: none;
+    }
+
+    #header-principal {
+        height: 10dvh;
+        line-height: 10dvh;
+        width: 100dvw;
+        font-size: .7rem;
+        text-wrap: nowrap;
+        position: fixed;
+        top: 0;
+        border-bottom: #000 solid 2px;
+    }
+
+    #quadros-container {
+        margin-top: 10dvh;
+        box-shadow: none;
+    }
+
+    .quadro {
+        min-width: 150px;
+        height: 200px;
+        margin: 5px auto;
+        font-size: 1.5rem;
     }
 }
 
@@ -138,5 +170,4 @@ main {
     .quadro:hover {
         font-size: 1rem;
     }
-
 }
