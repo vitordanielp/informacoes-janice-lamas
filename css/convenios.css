@@ -1,0 +1,29 @@
+#container-principal {
+    display: flex;
+}
+
+#tabela-pacotes {
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1200px;
+    min-width: 450px;
+}
+
+#tabela-pacotes tr {
+    line-height: 1.5rem;
+    text-align: center;
+    background-color: #6df8ff;
+}
+
+#titulo-tabela {
+    line-height: 1.8rem;
+    background-color: #f35151;
+    color: #fff;
+}
+
+.nome-convenio {
+    text-align: left;
+    background-color: #5a8fed;
+    width: fit-content;
+}
