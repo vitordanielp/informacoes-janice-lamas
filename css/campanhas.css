@@ -12,7 +12,7 @@ table {
     background-color: antiquewhite;
     border-collapse: collapse;
     margin: 8vh auto;
-    width: 72vw;
+    width: 85vw;
 }
 
 table,
@@ -91,7 +91,7 @@ td {
 }
 
 #comunicado {
-    width: 72vw;
+    width: 85vw;
     padding: .1rem;
     margin-top: .4rem;
     background-color: #fff;
