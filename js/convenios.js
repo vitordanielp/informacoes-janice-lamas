@@ -1,7 +1,7 @@
 const tabela = document.querySelector("#corpo-tabela");
 let convenios = [];  // novos convênios serão armazenados aqui
 let dados;
-const pacotes = ["mamografia", "ampliação", "densitometria", "us mamas"];
+const pacotes = ["mamografia", "ampliação", "us mamas"];
 
 
 fetch("https://vitordanielp.github.io/escalas/dados/pacotes/pacotes.json")
