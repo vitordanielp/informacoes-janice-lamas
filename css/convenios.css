@@ -8,13 +8,17 @@
     width: 90vw;
     max-width: 1200px;
     min-width: 450px;
+    user-select: none;
+    border-collapse: collapse;
 }
 
 #tabela-pacotes tr {
     line-height: 1.5rem;
     text-align: center;
     background-color: #6df8ff;
+    border: .5px solid #333;
 }
+
 
 #titulo-tabela {
     line-height: 1.8rem;
@@ -26,4 +30,10 @@
     text-align: left;
     background-color: #5a8fed;
     width: fit-content;
+}
+
+#corpo-tabela tr:hover {
+    transition: all 150ms;
+    filter: brightness(.75);
+    height: calc(1.5rem + 8px);
 }
