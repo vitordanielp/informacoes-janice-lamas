@@ -13,12 +13,12 @@
 <body>
     <h1 class="titulo-iframe">Médicos</h1>
     <main id="main-container">
-        <aside id="menu-lateral">
-            <form id="lateral-form" onchange="exibeInformacao()">
+        <section class="container superior">
+            <aside id="menu-lateral">
                 <h3>Selecione um médico</h3>
-            </form>
-        </aside>
-        <section id="informacoes-container">
+                <form id="lateral-form" onchange="exibeInformacao()">
+                </form>
+            </aside>
             <section id="informacoes-medico-container">
                 <h2 id="nome-medico"></h2>
                 <article id="informacoes-medico">
@@ -41,186 +41,24 @@
                                 <th>Categoria</th>
                                 <td id="categoria"></td>
                             </tr>
-                        </table>
-                    </article>
-                    <article id="observacoes-container"></article>
+                    </table>
+                </article>
+                <article id="observacoes-container"></article>
             </section>
+        </section>
+        <section class="container inferior">
             <section id="escalas-medicas-container">
-                <img src="../img/escala-asa-sul.png" alt="escala-medica" id="escala-asa-sul" class="escala-medica">
-                <img src="../img/escala-lago-sul.png" alt="escala-medica" id="escala-lago-sul" class="escala-medica">
-                <table class="tabela-escala oculto">
-                    <thead>
-                        <tr>
-                            <td colspan="2"></td>
-                            <th>SUBSTITUIÇÃO</th>
-                            <th>LIVRE</th>
-                            <th>BLOQUEIO AVISADO</th>
-                            <th>BLOQUEIO EM CIMA DA HORA</th>
-                            <th>FÉRIAS</th>
-                        </tr>
-                        <tr>
-                            <td rowspan="2"></td>
-                            <th rowspan="2">Mamografia</th>
-                            <th>Segunda</th>
-                            <th>Terça</th>
-                            <th>Quarta</th>
-                            <th>Quinta</th>
-                            <th>Sexta</th>
-                        </tr>
-                        <tr>
-                            <th>data</th>
-                            <th>data</th>
-                            <th>data</th>
-                            <th>data</th>
-                            <th>data</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th rowspan="3">Manhã</th>
-                            <th>Exames</th>
-                            <th>Mamo c/ consulta</th>
-                            <th>Mamo c/ consulta</th>
-                            <th>Mamo c/ consulta</th>
-                            <th>Mamo c/ consulta</th>
-                            <th>Mamo c/ consulta</th>
-                        </tr>
-                        <tr>
-                            <th>Resp. Laudo</th>
-                            <td>Adriana Dias</td>
-                            <td>Mirley</td>
-                            <td>Adriana Dias</td>
-                            <td>Renata Trinta</td>
-                            <td>Mirley</td>
-                        </tr>
-                        <tr>
-                            <th>Tomossíntese</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th rowspan="2">Tarde</th>
-                            <th>Exames</th>
-                            <th>Mamo c/ técnica</th>
-                            <th>Mamo c/ técnica</th>
-                            <th>Mamo c/ técnica</th>
-                            <th>Tomossíntese</th>
-                            <th>Mamo c/ técnica</th>
-                        </tr>
-                        <tr>
-                            <th>Resp. Laudo</th>
-                            <td>Renata Estrela</td>
-                            <td>Renata Trinta</td>
-                            <td>Amanda</td>
-                            <td>Janice</td>
-                            <td>Osmar</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
-                <table class="tabela-escala oculto">
-                    <thead>
-                        <tr>
-                            <td colspan="2"></td>
-                            <th>SUBSTITUIÇÃO</th>
-                            <th>LIVRE</th>
-                            <th>BLOQUEIO AVISADO</th>
-                            <th>BLOQUEIO EM CIMA DA HORA</th>
-                            <th>FÉRIAS</th>
-                        </tr>
-                        <tr>
-                            <td rowspan="2"></td>
-                            <th rowspan="2">Ecografia</th>
-                            <th>Segunda</th>
-                            <th>Terça</th>
-                            <th>Quarta</th>
-                            <th>Quinta</th>
-                            <th>Sexta</th>
-                        </tr>
-                        <tr>
-                            <th>data</th>
-                            <th>data</th>
-                            <th>data</th>
-                            <th>data</th>
-                            <th>data</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th rowspan="4">Manhã</th>
-                            <th>Eco 01</th>
-                            <td>Ana Lívia</td>
-                            <td>Renata Trinta</td>
-                            <td>Ana Lívia</td>
-                            <td>Alexandra</td>
-                            <td>Larissa</td>
-                        </tr>
-                        <tr>
-                            <th>Eco 02</th>
-                            <td>Márcia Dias</td>
-                            <td>Márcia Dias</td>
-                            <td>Thays</td>
-                            <td>Mirley</td>
-                            <td>Márcia Dias</td>
-                        </tr>
-                        <tr>
-                            <th>Eco 03</th>
-                            <td>Adriana Freire</td>
-                            <td>Alexandra</td>
-                            <td>Oliviane</td>
-                            <td>Oliviane</td>
-                            <td>Oliviane</td>
-                        </tr>
-                        <tr>
-                            <th>Eco 04</th>
-                            <td>Larissa</td>
-                            <td>Larissa</td>
-                            <td>Adriana Freire</td>
-                            <td>Adriana Dias</td>
-                            <td>Adriana Freire</td>
-                        </tr>
-                        <tr>
-                            <th rowspan="4">Tarde</th>
-                            <th>Eco 01</th>
-                            <td>Fábio</td>
-                            <td>Carla Concolato</td>
-                            <td>Amanda</td>
-                            <td>Aline</td>
-                            <td>Osmar</td>
-                        </tr>
-                        <tr>
-                            <th>Eco 02</th>
-                            <td>Adriana Dias</td>
-                            <td>Thays</td>
-                            <td>Thays</td>
-                            <td>Renata Trinta</td>
-                            <td>Renata Trinta</td>
-                        </tr>
-                        <tr>
-                            <th>Eco 03</th>
-                            <td>LIVRE</td>
-                            <td>Oliviane</td>
-                            <td>Carla Concolato</td>
-                            <td>Fábio</td>
-                            <td>Thays</td>
-                        </tr>
-                        <tr>
-                            <th>Eco 04</th>
-                            <td>Larissa</td>
-                            <td>Adriana Dias</td>
-                            <td>Adriana Dias</td>
-                            <td>Adriana Dias</td>
-                            <td>Fábio</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="buttons-container">
+                    <button class="botao" id="botao-retroceder">&lt Anterior</button>
+                    <button class="botao" id="botao-avancar">Próximo &gt</button>
+                </div>
+                <div class="container-tabelas" id="asa-sul"></div>
+                <div class="container-tabelas" id="lago-sul"></div>
             </section>
         </section>
     </main>
     <script src="../js/medicos.js"></script>
+    <script src="../js/escalas.js"></script>
 </body>
 
 </html>

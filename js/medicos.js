@@ -39,11 +39,15 @@ function adicionarMedico(nome, apelido, sexo, unidade, especialidade, tipoRegist
     medicos.push(new Medico(nome, apelido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias, observacoes));
 }
 
-function exibeObservacoes(medico) {
+function exibeObservacoes({ seletor, observacoes}) {
     observacoesContainer.innerHTML = `<h3>Observações</h3>
-    <div class="observacoes" id="observacoes-${medico.seletor}" style="margin:0 auto">
-        ${medico.observacoes}
-    </div>`
+    <div class="observacoes" id="observacoes-${seletor}" style="margin:0 auto">
+    ${observacoes}
+    </div>`;
+    let campoObservacoes = document.querySelector(".observacoes");
+    if(observacoes == ""){
+        campoObservacoes.classList.add("oculto");
+    }
 }
 
 // TODO: adicionar função de exibir a imagem de cada médico
@@ -57,13 +61,13 @@ function exibeInformacao() {
     const tipoRegistro = document.querySelector("#tipo-registro");
     const numeroRegistro = document.querySelector("#numero-registro");
     const categoria = document.querySelector("#categoria");
-    nomeMedico.textContent = medico.nome;
-    tipoRegistro.textContent = medico.tipoRegistro;
-    numeroRegistro.textContent = medico.numeroRegistro;
-    especialidade.textContent = medico.especialidade;
-    categoria.textContent = medico.getCategorias();
+    nomeMedico.innerText = medico.nome;
+    tipoRegistro.innerText = medico.tipoRegistro;
+    numeroRegistro.innerText = medico.numeroRegistro;
+    especialidade.innerText = medico.especialidade;
+    categoria.innerText = medico.getCategorias();
     medico.sexo === "M" ? iconeMedico.src = "../img/medicos/avatares/medico.png" : iconeMedico.src = "../img/medicos/avatares/medica.png";
-    unidade.textContent = medico.unidade;
+    unidade.innerText = medico.unidade;
     exibeObservacoes(medico);
     labels.forEach((label) => {
         label.control.checked === true ? label.style.color = "#fff" : label.style.color = labelsDefaultColor;
@@ -536,19 +540,6 @@ adicionarMedico(
     categorias = [0],
     observacoes = ``
 );
-
-// adicionarMedico(
-//     nome = "Médico Teste 01",
-//     apelido = "Médico Teste 01",
-//     sexo = "M",
-//     unidade = "asa sul",
-//     especialidade = "radiologista",
-//     tipoRegistro = "CRM",
-//     numeroRegistro = "3080",
-//     seletor = "medico-teste",
-//     categorias = [0]
-// );
-
 
 function adicionarInputMedico(medico) {
     lateralForm.innerHTML += `
