@@ -89,8 +89,8 @@ label:hover,
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    max-width: 15vw;
+    justify-content: space-between;
+    width: 99vw;
 }
 
 .botao {
@@ -114,20 +114,18 @@ label:hover,
 }
 
 .botao:active {
+    transition: none;
     background-color: #902020;
     border-width: 2px;
 }
 
+.botao-pressionado {
+    background-color: #902020;
+    border: 2px solid #fff;
+}
+
 .container-tabelas {
-    margin: .1rem;
-}
-
-#escala-asa-sul {
-    margin-bottom: 40px;
-}
-
-#escala-lago-sul {
-    margin-bottom: 5px;
+    margin: .3rem .2rem;
 }
 
 .escala-table tr:nth-child(even) {

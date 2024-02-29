@@ -1,5 +1,7 @@
 const botaoAvancar = document.querySelector("#botao-avancar");
 const botaoRetroceder = document.querySelector("#botao-retroceder");
+const botaoAsaSul = document.querySelector("#botao-asa-sul");
+const botaoLagoSul = document.querySelector("#botao-lago-sul");
 const sectionAsa = document.querySelector("#asa-sul");
 const sectionLago = document.querySelector("#lago-sul");
 let salasAsa, salasLago;
@@ -10,16 +12,8 @@ let data = new Date();
 
 /*
 EventListeners para avançar
-e retroceder semanas
+botões da página
 */
-botaoAvancar.addEventListener("click", () => {
-    data.setDate(data.getDate() + 7);
-    for (let unidade of unidades) {
-        apagarTabelas();
-        getSalas(unidade);
-    }
-});
-
 botaoRetroceder.addEventListener("click", () => {
     data.setDate(data.getDate() - 7);
     for (let unidade of unidades) {
@@ -28,6 +22,31 @@ botaoRetroceder.addEventListener("click", () => {
     }
 });
 
+botaoAvancar.addEventListener("click", () => {
+    data.setDate(data.getDate() + 7);
+    for (let unidade of unidades) {
+        apagarTabelas();
+        getSalas(unidade);
+    }
+});
+
+botaoAsaSul.addEventListener("click", () => {
+    if(sectionAsa.classList.contains("oculto")) {
+        sectionAsa.classList.remove("oculto");
+        sectionLago.classList.toggle("oculto");
+    }
+    botaoAsaSul.classList.add("botao-pressionado");
+    botaoLagoSul.classList.remove("botao-pressionado")
+});
+
+botaoLagoSul.addEventListener("click", () => {
+    if(sectionLago.classList.contains("oculto")) {
+        sectionLago.classList.remove("oculto");
+        sectionAsa.classList.toggle("oculto");
+    }
+    botaoLagoSul.classList.add("botao-pressionado");
+    botaoAsaSul.classList.remove("botao-pressionado")
+});
 
 /*
 Buscar data de segunda-feira

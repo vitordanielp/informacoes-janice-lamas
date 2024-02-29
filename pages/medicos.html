@@ -48,11 +48,17 @@
         <section class="container inferior">
             <section id="escalas-medicas-container">
                 <div id="buttons-container">
-                    <button class="botao" id="botao-retroceder">&lt Anterior</button>
-                    <button class="botao" id="botao-avancar">Próximo &gt</button>
+                    <div class="buttons left">
+                        <button class="botao" id="botao-retroceder">&lt Anterior</button>
+                        <button class="botao" id="botao-avancar">Próximo &gt</button>
+                    </div>
+                    <div class="buttons right">
+                        <button class="botao botao-unidade botao-pressionado" id="botao-asa-sul">Asa Sul</button>
+                        <button class="botao botao-unidade" id="botao-lago-sul">Lago Sul</button>
+                    </div>
                 </div>
                 <div class="container-tabelas" id="asa-sul"></div>
-                <div class="container-tabelas" id="lago-sul"></div>
+                <div class="container-tabelas oculto" id="lago-sul"></div>
             </section>
         </section>
     </main>
