@@ -39,13 +39,13 @@ function adicionarMedico(nome, apelido, sexo, unidade, especialidade, tipoRegist
     medicos.push(new Medico(nome, apelido, sexo, unidade, especialidade, tipoRegistro, numeroRegistro, seletor, categorias, observacoes));
 }
 
-function exibeObservacoes({ seletor, observacoes}) {
+function exibeObservacoes({ seletor, observacoes }) {
     observacoesContainer.innerHTML = `<h3>Observações</h3>
     <div class="observacoes" id="observacoes-${seletor}" style="margin:0 auto">
     ${observacoes}
     </div>`;
     let campoObservacoes = document.querySelector(".observacoes");
-    if(observacoes == ""){
+    if (observacoes == "") {
         campoObservacoes.classList.add("oculto");
     }
 }
@@ -424,7 +424,9 @@ adicionarMedico(
         <li>US pelvica abdominal c/ doppler
     </ul>
     <br>
-    <p>Idade mínima: <b>6 anos</b></p>`
+    <p><b>Exames simples com doppler</b> (se houver indicação), exemplos: abdome total, abdome superior, aparelho urinário, tireoide, mama, partes moles.</p>
+    <br>
+    <p><b>Atende todas as idades</b>.</p>`
 );
 
 adicionarMedico(
