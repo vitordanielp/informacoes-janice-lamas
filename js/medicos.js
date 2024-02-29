@@ -70,7 +70,14 @@ function exibeInformacao() {
     unidade.innerText = medico.unidade;
     exibeObservacoes(medico);
     labels.forEach((label) => {
-        label.control.checked === true ? label.style.color = "#fff" : label.style.color = labelsDefaultColor;
+        let styleChanges = "color: #fff; margin-left: 10%;"
+        if(label.control.checked) {
+            label.style = styleChanges;
+            label.parentNode.style = "background-color: var(--cor-destaque)";
+        } else {
+            label.style -= styleChanges;
+            label.parentNode.style -= "background-color: var(--cor-destaque)";
+        }
     });
 }
 
@@ -251,7 +258,7 @@ adicionarMedico(
     nome = "Janice Magalhães Lamas",
     apelido = "Janice Lamas",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "asa sul, lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "3570",

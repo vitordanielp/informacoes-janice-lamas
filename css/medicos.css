@@ -1,7 +1,9 @@
+* {
+    --cor-destaque: #da3030;
+}
+
 main {
-    overflow-x: hidden;
-    padding: 5px 0;
-    background-image: linear-gradient(#fc1010e0, #ffffff80);
+    background-color:#fff;
 }
 
 .superior {
@@ -9,36 +11,43 @@ main {
 }
 
 #menu-lateral {
-    padding: 2px 5px;
-    background-color: #10101040;
+    padding: 2px;
+    background-color: #1010101d;
     min-width: fit-content;
     max-height: 54vh;
+    margin: .5rem 0;
 }
 
 #menu-lateral h3 {
-    color: #fff;
+    font-size: medium;
+    color: var(--cor-destaque);
+    line-height: 1.6rem;
 }
 
 #lateral-form {
-    max-height: 54vh;
-    height: 45vh;
+    max-height: 49vh;
+    height: inherit;
     overflow: auto;
 }
 
 .input-medico {
-    float: left;
-    height: 18px;
-    margin-right: 3px;
+    display: none;
 }
 
 .input-container label {
     display: block;
+    transition: 250ms;
+}
+
+.input-container:hover {
+    background-color: var(--cor-destaque);
 }
 
 label:hover,
 .input-medico:hover {
-    color: #efefef;
+    color: #fff;
     cursor: pointer;
+    margin-left: 10%;
 }
 
 #informacoes-medico-container {
@@ -65,7 +74,7 @@ label:hover,
 
 #nome-medico,
 #observacoes-container h3 {
-    color: #fff;
+    color: var(--cor-destaque);
 }
 
 #observacoes-container {
@@ -81,8 +90,9 @@ label:hover,
     overflow: auto;
     max-height: 25vh;
     min-width: 30vw;
-    border: 3px solid #fff;
-    background-color: #ffffff80;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 5px;
+    background-color: #1010101d;
 }
 
 #buttons-container {
@@ -94,7 +104,7 @@ label:hover,
 }
 
 .botao {
-    background-color: #da3030;
+    background-color: var(--cor-destaque);
     width: 100px;
     min-width: 70px;
     height: 25px;
@@ -107,21 +117,33 @@ label:hover,
     text-wrap: nowrap;
 }
 
+.botao-unidade {
+    margin: 0;
+}
+
+.right {
+    display: flex;
+}
+
+#botao-asa-sul {
+    border-radius: 8px 0 0 8px;
+}
+
+#botao-lago-sul {
+    border-radius: 0 8px 8px 0;
+}
+
 .botao:hover {
     transition: 300ms;
-    border-color: #fff;
-    outline: 1px solid #fff;
+    border-color: #000;
 }
 
 .botao:active {
-    transition: none;
-    background-color: #902020;
-    border-width: 2px;
+    background-color: #923030;
 }
 
 .botao-pressionado {
-    background-color: #902020;
-    border: 2px solid #fff;
+    background-color: #000;
 }
 
 .container-tabelas {
