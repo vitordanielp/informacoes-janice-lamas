@@ -92,7 +92,7 @@ Apaga todas as
 tabelas da página
 */
 function apagarTabelas() {
-    let tabelas = document.querySelectorAll("table");
+    let tabelas = document.querySelectorAll(".escala-table");
     tabelas.forEach(tabela => tabela.remove());
 }
 
