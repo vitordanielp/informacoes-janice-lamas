@@ -11,7 +11,7 @@ const diaSemana = ["segunda", "terca", "quarta", "quinta", "sexta", "sabado"];
 let data = new Date();
 
 /*
-EventListeners para avançar
+EventListeners para
 botões da página
 */
 botaoRetroceder.addEventListener("click", () => {
