@@ -5,23 +5,19 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
-    width: 80vw;
-    margin: 0 auto;
-    background-color: var(--dark);
-}
-
 #header-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
-    text-align: center;
-    line-height: 8vh;
+    text-wrap: nowrap;
     height: 8vh;
     background-color: var(--red);
     font-size: .9rem;
 }
 
 main {
-    box-shadow: inset 0 5px 8px #888, inset 0 -5px 8px #888;
+    box-shadow: inset 0 5px 8px #888;
     background-color: var(--white);
     padding-top: 1rem;
 }
@@ -30,15 +26,15 @@ main {
 #aviso-geral {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-flow: column nowrap;
-    text-align: left;
-    width: fit-content;
+    text-align: center;
     max-width: 90vw;
     margin: 0 auto;
     background-color: #90909050;
     border: 1px solid var(--red);
     border-radius: 8px;
-    padding: 1rem;
+    padding: .5rem;
     font-size: 1.2rem;
 }
 
@@ -46,33 +42,36 @@ main {
     text-align: center;
 }
 
-#aviso-geral li {
+#aviso-geral ul {
+    text-align: left;
     list-style: inside;
 }
 
 /* Quadros de informações */
 #quadros-container {
-    width: 80vw;
-    min-height: 92vh;
+    max-width: 90vw;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     padding: 2vh 0;
+    gap: 1vw;
 }
 
 .quadro {
+    flex: 1;
     text-decoration: none;
     color: var(--white);
-    font-size: 1.2rem;
+    font-size: x-large;
     background-color: var(--red);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh;
     width: 22vw;
-    min-width: 250px;
+    min-height: 80px;
+    min-width: 240px;
     border-radius: 1.25rem;
     text-align: center;
     cursor: pointer;
@@ -94,10 +93,11 @@ main {
     display: none;
     flex-direction: row;
     position: fixed;
-    top: 6vh;
-    left: 11vw;
+    top: 5vh;
+    left: 0;
+    right: 0;
     height: 90vh;
-    width: 78vw;
+    width: 79vw;
     margin: 0 auto;
     background: #343a40f0;
     border-radius: 25px;
@@ -124,10 +124,6 @@ main {
 }
 
 @media screen and (max-width: 920px) {
-    body {
-        width: auto;
-    }
-
     #header-principal {
         line-height: 5vh;
         font-size: 1rem;
@@ -139,7 +135,6 @@ main {
 
     .quadro {
         width: 45vw;
-        margin: .5rem 0;
         font-size: 1.8rem;
     }
 
@@ -155,48 +150,29 @@ main {
     }
 
     #header-principal {
-        height: 10dvh;
-        line-height: 10dvh;
-        width: 100dvw;
-        font-size: .7rem;
+        height: 10vh;
+        line-height: 10vh;
+        font-size: x-small;
+    }
+    
+    #aviso-geral {
+        font-size: small;
+        height: 40vh;
+    }
+
+    #aviso-geral ul {
         text-wrap: nowrap;
-        position: fixed;
-        top: 0;
-        border-bottom: #000 solid 2px;
     }
 
+
     #quadros-container {
-        margin-top: 10dvh;
         box-shadow: none;
+        gap: .5rem;
     }
 
     .quadro {
-        min-width: 150px;
-        height: 200px;
-        margin: 5px auto;
+        width: 90vw;
+        height: 80px;
         font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-height: 400px) {
-    #header-principal {
-        height: 12vh;
-        line-height: 12vh;
-        font-size: .7rem;
-    }
-
-    #quadros-container {
-        min-height: 400px;
-    }
-
-    .quadro {
-        height: 22vh;
-        min-height: 80px;
-        font-size: .9rem;
-        margin: .2rem 0;
-    }
-
-    .quadro:hover {
-        font-size: 1rem;
     }
 }
