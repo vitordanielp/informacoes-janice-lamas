@@ -5,6 +5,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-image: radial-gradient(#ccc, #00000050);
 }
 
 table {
