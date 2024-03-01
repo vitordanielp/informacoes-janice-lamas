@@ -4,7 +4,8 @@ let dados;
 const pacotes = ["mamografia", "ampliação", "us mamas"];
 
 
-fetch("https://vitordanielp.github.io/escalas/dados/pacotes/pacotes.json")
+(async function () {
+    fetch("https://vitordanielp.github.io/escalas/dados/pacotes/pacotes.json")
     .then(response => response.json())
     .then(response => {
         dados = response;
@@ -13,7 +14,7 @@ fetch("https://vitordanielp.github.io/escalas/dados/pacotes/pacotes.json")
             addCells(convenio);
         }
     });
-
+}())
 
 class Convenio {
     constructor(nome, pacotes) {
