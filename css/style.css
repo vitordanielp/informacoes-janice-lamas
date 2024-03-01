@@ -23,6 +23,31 @@ body {
 main {
     box-shadow: inset 0 5px 8px #888, inset 0 -5px 8px #888;
     background-color: var(--white);
+    padding-top: 1rem;
+}
+
+/* Aviso geral */
+#aviso-geral {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: left;
+    width: fit-content;
+    max-width: 90vw;
+    margin: 0 auto;
+    background-color: #90909050;
+    border: 1px solid var(--red);
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+#aviso-geral h2 {
+    text-align: center;
+}
+
+#aviso-geral li {
+    list-style: inside;
 }
 
 /* Quadros de informações */
