@@ -182,8 +182,8 @@ adicionarMedico(
     sexo = "F",
     unidade = "asa sul",
     especialidade = "radiologista",
-    tipoRegistro = "21116",
-    numeroRegistro = "CRM",
+    tipoRegistro = "CRM",
+    numeroRegistro = "21116",
     seletor = "dra-amanda",
     categorias = [0],
     observacoes = ``
@@ -311,11 +311,11 @@ adicionarMedico(
 <br>
 <p><b>Estadiamento de hidradenite supurativa:</b></p>
 <ol>
-    <li>Segmento: <b>R$: 700,00</b> / 60 minutos
-    <li>Segmentos: <b>R$: 1.225,00</b> / 90 minutos
-    <li>Segmentos: <b>R$: 1.400,00</b> / 120 minutos
-    <li>Segmentos: <b>R$: 1.750,00</b> / 150 minutos
-    <li>Segmentos: <b>R$: 2.100,00</b> / 180 minutos
+    <li>1 Segmento: <b>R$: 700,00</b> / 60 minutos
+    <li>2 Segmentos: <b>R$: 1.225,00</b> / 90 minutos
+    <li>3 Segmentos: <b>R$: 1.400,00</b> / 120 minutos
+    <li>4 Segmentos: <b>R$: 1.750,00</b> / 150 minutos
+    <li>5 Segmentos: <b>R$: 2.100,00</b> / 180 minutos
 </ol>
 `
 );
