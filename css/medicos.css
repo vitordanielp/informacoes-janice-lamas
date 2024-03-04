@@ -22,13 +22,14 @@ main {
 }
 
 #menu-lateral h3 {
-    font-size: medium;
+    font-size: small;
     color: var(--cor-destaque);
     line-height: 1.6rem;
     text-align: center;
 }
 
 #lateral-form {
+    font-size: small;
     max-height: 89%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -95,7 +96,7 @@ label:hover,
     text-align: left;
     padding: 0 4px;
     overflow: auto;
-    max-height: 28vh;
+    max-height: 30vh;
     min-width: 30vw;
     border: 2px solid var(--cor-destaque);
     border-radius: 5px;
@@ -208,10 +209,10 @@ label:hover,
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 960px) {
 
-    #nome-medico {
-        font-size: 1.2rem;
+    #nome-medico, #observacoes-container h3 {
+        font-size: .95rem;
     }
 
     #tabela-resumo-medico * {
@@ -221,7 +222,6 @@ label:hover,
 
     .observacoes {
         font-size: small;
-        max-height: 92px;
     }
 
     .escala-table td,
@@ -241,11 +241,10 @@ label:hover,
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
 
     #menu-lateral {
         font-size: small;
-        max-height: 42vh;
     }
 
     #icone-medico {
@@ -273,6 +272,19 @@ label:hover,
     }
 }
 
+@media screen and (max-width: 420px) {
+    #menu-lateral {
+        max-height: 140px;
+    }
+    
+    #lateral-form {
+        max-height: 80%;
+    }
+
+    .botao {
+        font-size: .6rem;
+    }
+}
 @media screen and (max-width: 380px) {
 
     main {
@@ -283,11 +295,6 @@ label:hover,
         padding: 0;
         margin: 10px 0;
         font-size: small;
-        max-height: 140px;
-    }
-
-    #lateral-form {
-        max-height: 80%;
     }
 
     #nome-medico {
@@ -328,6 +335,5 @@ label:hover,
 
     .botao {
         width: 43vw;
-        font-size: .6rem;
     }
 }
