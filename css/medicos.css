@@ -3,8 +3,9 @@
 }
 
 main {
-    background-color:#fff;
+    background-color: #fff;
     padding: .5rem;
+    max-height: 90vh;
 }
 
 .superior {
@@ -17,7 +18,7 @@ main {
     padding: 2px;
     background-color: #1010101d;
     min-width: fit-content;
-    max-height: 54vh;
+    max-height: 56vh;
 }
 
 #menu-lateral h3 {
@@ -54,7 +55,7 @@ label:hover,
 }
 
 #informacoes-medico-container {
-    flex: 4;
+    flex: 4 250px;
     max-width: 100vw;
     margin: 0 auto;
     text-align: center;
@@ -94,7 +95,7 @@ label:hover,
     text-align: left;
     padding: 0 4px;
     overflow: auto;
-    max-height: 25vh;
+    max-height: 28vh;
     min-width: 30vw;
     border: 2px solid var(--cor-destaque);
     border-radius: 5px;
@@ -113,7 +114,7 @@ label:hover,
 .botao {
     background-color: var(--cor-destaque);
     width: 100px;
-    min-width: 70px;
+    min-width: 60px;
     height: 25px;
     border: none;
     border-radius: 8px;
@@ -125,15 +126,18 @@ label:hover,
     margin: .1rem 0;
 }
 
-.right, .left {
+.right,
+.left {
     display: flex;
 }
 
-#botao-asa-sul, #botao-retroceder {
+#botao-asa-sul,
+#botao-retroceder {
     border-radius: 8px 0 0 8px;
 }
 
-#botao-lago-sul, #botao-avancar {
+#botao-lago-sul,
+#botao-avancar {
     border-radius: 0 8px 8px 0;
 }
 
@@ -201,4 +205,129 @@ label:hover,
 
 .oculto {
     display: none;
+}
+
+
+@media screen and (max-width: 980px) {
+
+    #nome-medico {
+        font-size: 1.2rem;
+    }
+
+    #tabela-resumo-medico * {
+        font-size: .7rem;
+        width: 100px;
+    }
+
+    .observacoes {
+        font-size: small;
+        max-height: 92px;
+    }
+
+    .escala-table td,
+    .escala-table tr,
+    .escala-table th,
+    .datas-semana th {
+        font-size: .7rem;
+        text-wrap: nowrap;
+    }
+
+    #buttons-container {
+        justify-content: space-between;
+    }
+
+    .botao {
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #menu-lateral {
+        font-size: small;
+        max-height: 42vh;
+    }
+
+    #icone-medico {
+        height: 70px;
+    }
+
+    .observacoes {
+        font-size: small;
+    }
+
+    .escala-table .multi-row {
+        font-size: .8rem;
+    }
+
+    .escala-table .nome-unidade {
+        font-size: small;
+    }
+
+    .escala-table td,
+    .escala-table tr,
+    .escala-table th,
+    .datas-semana th {
+        font-size: .55rem;
+        text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    main {
+        padding: 1px;
+    }
+
+    #menu-lateral {
+        padding: 0;
+        margin: 10px 0;
+        font-size: small;
+        max-height: 140px;
+    }
+
+    #lateral-form {
+        max-height: 80%;
+    }
+
+    #nome-medico {
+        font-size: 1rem;
+    }
+
+    #icone-medico {
+        height: 50px;
+    }
+
+    #tabela-resumo-medico * {
+        font-size: .5rem;
+        width: 80px;
+    }
+
+    .observacoes {
+        font-size: x-small;
+    }
+
+    .escala-table .multi-row {
+        font-size: .5rem;
+    }
+
+    .escala-table .nome-unidade {
+        font-size: xx-small;
+    }
+
+    .escala-table td,
+    .escala-table tr,
+    .escala-table th,
+    .datas-semana th {
+        font-size: .26rem;
+    }
+
+    #buttons-container {
+        justify-content: center;
+    }
+
+    .botao {
+        width: 43vw;
+        font-size: .6rem;
+    }
 }
