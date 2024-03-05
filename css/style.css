@@ -117,7 +117,6 @@ main {
     cursor: pointer;
 }
 
-/* Classes dinâmicas */
 .desfocado {
     filter: blur(1px);
     z-index: -1;
@@ -140,6 +139,11 @@ main {
 
     .quadro:hover {
         font-size: 1.95rem;
+    }
+
+    
+    #iframe-principal {
+        max-height: 100vh;
     }
 }
 
@@ -174,5 +178,14 @@ main {
         width: 90vw;
         height: 80px;
         font-size: 1.5rem;
+    }
+
+    #popup {
+        width: 99vw;
+        height: 95vh;
+        top: 2.5vh;
+        background: #343a40f0;
+        border-radius: 12px;
+        padding: 1vw;
     }
 }
