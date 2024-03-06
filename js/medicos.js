@@ -86,7 +86,7 @@ adicionarMedico(
     nome = "Adriana Dias de Farias Figueiredo",
     apelido = "Adriana Dias",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "asa sul, lago sul",
     especialidade = "ginecologista",
     tipoRegistro = "CRM",
     numeroRegistro = "19607",
@@ -99,7 +99,7 @@ adicionarMedico(
     nome = "Adriana Sousa Freire",
     apelido = "Adriana Freire",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "asa sul, lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "21125",
@@ -117,23 +117,10 @@ adicionarMedico(
 );
 
 adicionarMedico(
-    nome = "Alessandra Cerri Bertolino Fonseca",
-    apelido = "Alessandra Cerri",
-    sexo = "F",
-    unidade = "asa sul",
-    especialidade = "radiologista",
-    tipoRegistro = "CRM",
-    numeroRegistro = "21585",
-    seletor = "dra-alessandra",
-    categorias = [0],
-    observacoes = ``
-);
-
-adicionarMedico(
     nome = "Alexander Tavares Daud",
     apelido = "Alexander Daud",
     sexo = "M",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "angiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "11981",
@@ -154,7 +141,7 @@ adicionarMedico(
     nome = "Alexandra Ferreira Silva",
     apelido = "Alexandra Silva",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "asa sul, lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "11300",
@@ -180,7 +167,7 @@ adicionarMedico(
     nome = "Amanda Assis da Silva Lima",
     apelido = "Amanda Assis",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "asa sul, lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "21116",
@@ -206,7 +193,7 @@ adicionarMedico(
     nome = "Carla Maria da Silva Araújo",
     apelido = "Carla Araújo",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "14935",
@@ -219,7 +206,7 @@ adicionarMedico(
     nome = "Carla Concolato",
     apelido = "Carla Concolato",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "asa sul, lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "22066",
@@ -232,12 +219,12 @@ adicionarMedico(
     nome = "Henrique Metzger",
     apelido = "Henrique",
     sexo = "M",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "17411",
     seletor = "dr-henrique",
-    categorias = [0],
+    categorias = [4],
     observacoes = ``
 );
 
@@ -245,12 +232,12 @@ adicionarMedico(
     nome = "Iris Gardênia Cavalca e Silva",
     apelido = "Iris Gardênia",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "mastologista",
     tipoRegistro = "CRM",
     numeroRegistro = "10842",
     seletor = "dra-iris",
-    categorias = [0],
+    categorias = [1],
     observacoes = ``
 );
 
@@ -276,7 +263,7 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "11295",
     seletor = "dra-juliana",
-    categorias = [0],
+    categorias = [1],
     observacoes = ``
 );
 
@@ -321,23 +308,10 @@ adicionarMedico(
 );
 
 adicionarMedico(
-    nome = "Lorena Francisca Moura de Freitas Carvalho",
-    apelido = "Lorena Francisca",
-    sexo = "F",
-    unidade = "asa sul",
-    especialidade = "radiologista",
-    tipoRegistro = "CRM",
-    numeroRegistro = "8214",
-    seletor = "dra-lorena",
-    categorias = [0],
-    observacoes = ``
-);
-
-adicionarMedico(
     nome = "Marcelo Bittencourt Barreiros",
     apelido = "Marcelo Barreiros",
     sexo = "M",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "7203",
@@ -363,7 +337,7 @@ adicionarMedico(
     nome = "Marcia Da Rocha Carneiro Barreiros",
     apelido = "Marcia Barreiros",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "7697",
@@ -376,7 +350,7 @@ adicionarMedico(
     nome = "Márcia Laporte",
     apelido = "Márcia Laporte",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "28342",
@@ -389,7 +363,7 @@ adicionarMedico(
     nome = "Melissa Severo De Brito",
     apelido = "Melissa Severo",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "30978",
@@ -407,7 +381,7 @@ adicionarMedico(
     tipoRegistro = "CRM",
     numeroRegistro = "7591",
     seletor = "dra-mirley",
-    categorias = [0],
+    categorias = [0, 1],
     observacoes = ``
 );
 
@@ -440,7 +414,7 @@ adicionarMedico(
     nome = "Osmar Pellegrini Júnior",
     apelido = "Osmar Pellegrini",
     sexo = "M",
-    unidade = "asa sul",
+    unidade = "asa sul, lago sul",
     especialidade = "mastologista",
     tipoRegistro = "CRM",
     numeroRegistro = "21768",
@@ -453,7 +427,7 @@ adicionarMedico(
     nome = "Renata Cristina Silva Trinta",
     apelido = "Renata Trinta",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "asa sul, lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "11595",
@@ -466,12 +440,12 @@ adicionarMedico(
     nome = "Renata Tavazzi Estrela",
     apelido = "Renata Estrela",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "11609",
     seletor = "dra-renata-estrela",
-    categorias = [0],
+    categorias = [0, 1],
     observacoes = ``
 );
 
@@ -479,12 +453,12 @@ adicionarMedico(
     nome = "Sérgio Eduardo Costa Sampaio",
     apelido = "Sérgio Sampaio",
     sexo = "M",
-    unidade = "lago sul",
+    unidade = "asa sul, lago sul",
     especialidade = "ginecologista",
     tipoRegistro = "CRM",
     numeroRegistro = "4414",
     seletor = "dr-sergio",
-    categorias = [0],
+    categorias = [0, 1],
     observacoes = `
 <h4>Exames diferenciados:</h4>
 <ul>
@@ -502,12 +476,12 @@ adicionarMedico(
     nome = "Silvio Braz de Paixão",
     apelido = "Silvio Braz",
     sexo = "M",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "ginecologista",
     tipoRegistro = "CRM",
     numeroRegistro = "10605",
     seletor = "dr-silvio",
-    categorias = [0],
+    categorias = [0, 1],
     observacoes = ``
 );
 
@@ -532,6 +506,7 @@ adicionarMedico(
     <li class="convenio-nutricao">MPF
     <li class="convenio-nutricao">MPM
     <li class="convenio-nutricao">MPT
+    <li class="convenio-nutricao">POLÍCIA FEDERAL
     <li class="convenio-nutricao">SIS SENADO
     <li class="convenio-nutricao">STF
     <li class="convenio-nutricao">STJ
@@ -560,12 +535,12 @@ adicionarMedico(
     nome = "Yara Cristina Rocha Tanezini",
     apelido = "Yara Cristina",
     sexo = "F",
-    unidade = "asa sul",
+    unidade = "lago sul",
     especialidade = "radiologista",
     tipoRegistro = "CRM",
     numeroRegistro = "2920",
     seletor = "dra-yara",
-    categorias = [0],
+    categorias = [1],
     observacoes = ``
 );
 
