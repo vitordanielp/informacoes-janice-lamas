@@ -521,7 +521,26 @@ adicionarMedico(
     numeroRegistro = "2559",
     seletor = "dra-thais-lamas",
     categorias = [5],
-    observacoes = ``
+    observacoes = `
+<h4 id="titulo-nutricao">Convênios aceitos</h4>
+<ul id="lista-nutricao">
+    <li class="convenio-nutricao">Amil One Health
+    <li class="convenio-nutricao">CAIXA
+    <li class="convenio-nutricao">CASEMBRAPA
+    <li class="convenio-nutricao">FUSEX
+    <li class="convenio-nutricao">MPDFT
+    <li class="convenio-nutricao">MPF
+    <li class="convenio-nutricao">MPM
+    <li class="convenio-nutricao">MPT
+    <li class="convenio-nutricao">SIS SENADO
+    <li class="convenio-nutricao">STF
+    <li class="convenio-nutricao">STJ
+    <li class="convenio-nutricao">STM
+    <li class="convenio-nutricao">TJDFT
+    <li class="convenio-nutricao">TRE
+    <li class="convenio-nutricao">TRF
+    <li class="convenio-nutricao">TRT
+</ul>`
 );
 
 adicionarMedico(

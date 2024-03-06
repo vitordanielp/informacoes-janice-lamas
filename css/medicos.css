@@ -103,6 +103,22 @@ label:hover,
     background-color: #1010101d;
 }
 
+/*
+Observações consulta
+nutricional (Thais Lamas)
+*/
+
+#titulo-nutricao {
+    text-align: center;
+    line-height: 1.1rem;
+}
+
+#lista-nutricao {
+    line-height: .8rem;
+    font-size: smaller;
+    list-style: inside decimal-leading-zero;
+}
+
 #buttons-container {
     display: flex;
     flex-flow: row wrap-reverse;
@@ -211,7 +227,8 @@ label:hover,
 
 @media screen and (max-width: 960px) {
 
-    #nome-medico, #observacoes-container h3 {
+    #nome-medico,
+    #observacoes-container h3 {
         font-size: .95rem;
     }
 
@@ -276,7 +293,7 @@ label:hover,
     #menu-lateral {
         max-height: 140px;
     }
-    
+
     #lateral-form {
         max-height: 80%;
     }
@@ -285,6 +302,7 @@ label:hover,
         font-size: .6rem;
     }
 }
+
 @media screen and (max-width: 380px) {
 
     main {
