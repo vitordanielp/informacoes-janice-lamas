@@ -29,7 +29,8 @@ main {
     justify-content: space-evenly;
     flex-flow: column nowrap;
     text-align: center;
-    max-width: 90vw;
+    width: 90vw;
+    max-width: 980px;
     margin: 0 auto;
     background-color: #90909050;
     border: 1px solid var(--red);
@@ -49,6 +50,7 @@ main {
 
 /* Quadros de informações */
 #quadros-container {
+    width: 980px;
     max-width: 90vw;
     margin: 0 auto;
     display: flex;
