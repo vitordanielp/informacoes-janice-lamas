@@ -3,11 +3,11 @@
 }
 
 #tabela-autorizacao {
+    font-size: small;
     text-align: center;
     margin: 0 auto;
     border-collapse: collapse;
     border: 1px solid #000;
-    text-transform: uppercase;
 }
 
 td,

@@ -24,12 +24,12 @@ function incluirAutorizador(nome, convenios) {
 
 
 /* Adicionando autorizadores */
-incluirAutorizador(nome = "silas sampaio", convenios = ["camara", "geap", "infraero", "pf", "postal saúde", "proasa", "trt", "unafisco", "unimed"]);
-incluirAutorizador(nome = "ana ribeiro", convenios = ["affego", "amil", "caesan", "gdf", "serpro", "stj", "stm", "tjdft", "trf"]);
-incluirAutorizador(nome = "gisele sandra", convenios = ["assefaz", "bacen", "caixa", "e-vida", "fascal", "medservice", "sis-senado", "stf", "tre", "tst"]);
-incluirAutorizador(nome = "jacke rodrigues", convenios = ["bradesco", "mpu", "capesesp", "casembrapa", "brb", "conab", "amhp", "gama", "casec"]);
-incluirAutorizador(nome = "ana paula", convenios = ["autorizador coringa", "responsável pela antecipação dos convênios críticos"]);
-incluirAutorizador(nome = "raquel almeida", convenios = ["gestao de agendas", "acompanhamento da ressonancia"]);
+incluirAutorizador(nome = "silas sampaio", convenios = ["CÂMARA", "GEAP", "INFRAERO", "POLÍCIA FEDERAL", "POSTAL SAÚDE", "PROASA", "TRT", "UNAFISCO", "UNIMED"]);
+incluirAutorizador(nome = "ana ribeiro", convenios = ["AFFEGO", "AMIL", "CAESAN", "GDF", "SERPRO", "STJ", "STM", "TJDFT", "TRF"]);
+incluirAutorizador(nome = "gisele sandra", convenios = ["ASSEFAZ", "BACEN", "CAIXA", "E-VIDA", "FASCAL", "MEDSERVICE", "SIS-SENADO", "STF", "TRE", "TST"]);
+incluirAutorizador(nome = "jacke rodrigues", convenios = ["BRADESCO", "MPU", "CAPESESP", "CASEMBRAPA", "BRB", "CONAB", "AMHP", "GAMA", "CASEC"]);
+incluirAutorizador(nome = "ana paula", convenios = ["ASSEFAZ - Mamografia", "BACEN - Doppler e RM", "BRB - Mamografia e RM", "CAIXA - Ressonância", "CÂMARA - Mamografia", "CASEC - Todos", "CASEMBRAPA - Nutrição e Mamografia", "CONAB - Todos", "GEAP - Ressonância", "POSTAL SAÚDE - Mamografia", "STF - Todos", "STJ - US Abdome total, doppler e RM", "TRT - Ressonância"]);
+incluirAutorizador(nome = "raquel almeida", convenios = ["GESTÃO DE AGENDAS", "ACOMPANHAMENTO DE RESSONÂNCIA"]);
 
 
 /* Preenchimento da tabela */
@@ -38,7 +38,7 @@ function exibirNome(autorizador) {
     ao ID do autorizador recebido e exibe
     seu nome no local correto da tabela */
     const target = document.querySelector(`#autorizador-${autorizador.id}`);
-    target.textContent = autorizador.nome;
+    target.textContent = autorizador.nome.toUpperCase();
 }
 
 
