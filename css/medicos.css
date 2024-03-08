@@ -57,7 +57,8 @@ label:hover,
 
 #informacoes-medico-container {
     flex: 4 250px;
-    max-width: 100vw;
+    max-width: 800px;
+    min-width: 300px;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -107,7 +108,6 @@ label:hover,
 Observações consulta
 nutricional (Thais Lamas)
 */
-
 #titulo-nutricao {
     text-align: center;
     line-height: 1.1rem;
@@ -119,6 +119,9 @@ nutricional (Thais Lamas)
     list-style: inside decimal-leading-zero;
 }
 
+/*
+Botões de navegação
+*/
 #buttons-container {
     display: flex;
     flex-flow: row wrap-reverse;
@@ -171,6 +174,10 @@ nutricional (Thais Lamas)
     background-color: #751919;
 }
 
+
+/*
+Tabelas de escalas
+*/
 .container-tabelas {
     margin: 0 auto;
 }
@@ -224,7 +231,9 @@ nutricional (Thais Lamas)
     display: none;
 }
 
-
+/*
+Breakpoints
+*/
 @media screen and (max-width: 960px) {
 
     #nome-medico,
@@ -272,6 +281,10 @@ nutricional (Thais Lamas)
         font-size: small;
     }
 
+    .escala-table {
+        border-collapse: collapse;
+    }
+
     .escala-table .multi-row {
         font-size: .8rem;
     }
@@ -286,14 +299,26 @@ nutricional (Thais Lamas)
     .datas-semana th {
         font-size: .55rem;
         text-wrap: wrap;
+        border: 1px solid #000;
+        outline: none;
     }
 }
 
 @media screen and (max-width: 420px) {
+    .escala-table td,
+    .escala-table tr,
+    .escala-table th,
+    .datas-semana th {
+        font-size: .45rem;
+    }
+    
     #menu-lateral {
         max-height: 140px;
+        padding: 0;
+        margin: 10px 0;
+        font-size: small;
     }
-
+    
     #lateral-form {
         max-height: 80%;
     }
@@ -303,22 +328,18 @@ nutricional (Thais Lamas)
     }
 }
 
-@media screen and (max-width: 380px) {
 
+@media screen and (max-width: 380px) {
+    
     main {
         padding: 1px;
     }
-
-    #menu-lateral {
-        padding: 0;
-        margin: 10px 0;
-        font-size: small;
-    }
-
+    
+    
     #nome-medico {
         font-size: 1rem;
     }
-
+    
     #icone-medico {
         height: 50px;
     }
@@ -344,7 +365,7 @@ nutricional (Thais Lamas)
     .escala-table tr,
     .escala-table th,
     .datas-semana th {
-        font-size: .26rem;
+        font-size: .37rem;
     }
 
     #buttons-container {
