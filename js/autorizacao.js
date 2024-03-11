@@ -24,7 +24,7 @@ function incluirAutorizador(nome, convenios) {
 
 
 /* Adicionando autorizadores */
-incluirAutorizador(nome = "silas sampaio", convenios = ["CÂMARA", "GEAP", "INFRAERO", "POLÍCIA FEDERAL", "POSTAL SAÚDE", "PROASA", "TRT", "UNAFISCO", "UNIMED"]);
+incluirAutorizador(nome = "silas sampaio", convenios = ["CÂMARA", "GEAP", "PETROBRÁS", "CASSI", "SULAMÉRICA", "POLÍCIA FEDERAL", "POSTAL SAÚDE", "PROASA", "TRT", "UNAFISCO", "UNIMED"]);
 incluirAutorizador(nome = "ana ribeiro", convenios = ["AFFEGO", "AMIL", "CAESAN", "GDF", "SERPRO", "STJ", "STM", "TJDFT", "TRF"]);
 incluirAutorizador(nome = "gisele sandra", convenios = ["ASSEFAZ", "BACEN", "CAIXA", "E-VIDA", "FASCAL", "MEDSERVICE", "SIS-SENADO", "STF", "TRE", "TST"]);
 incluirAutorizador(nome = "jacke rodrigues", convenios = ["BRADESCO", "MPU", "CAPESESP", "CASEMBRAPA", "BRB", "CONAB", "AMHP", "GAMA", "CASEC"]);
@@ -90,8 +90,8 @@ function preencherTabela() {
         exibirConvenios(autorizador);
     }
     const tableDatas = document.querySelectorAll("td");
-    for(data of tableDatas) {
-        if(!data.textContent) {
+    for (data of tableDatas) {
+        if (!data.textContent) {
             data.classList.add("vazio");
         }
     }
