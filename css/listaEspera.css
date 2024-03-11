@@ -1,0 +1,29 @@
+main {
+    background-color: #f0ebf8;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    width: 100vw;
+}
+
+a {
+    border: 1px solid #efefef;
+    border-radius: 6px;
+    margin: 1% 0;
+    margin-right: 16px;
+    text-align: center;
+    color: #efefef;
+    text-decoration: none;
+    background-color: #673ab7;
+    padding: .5em;
+    width: 625px;
+    max-width: calc(90vw - 15px);
+}
+
+iframe {
+    background-color: #f0ebf8;
+    width: 100vw;
+    height: 100vw;
+}
