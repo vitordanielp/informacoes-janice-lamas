@@ -4,8 +4,8 @@ main {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
-    height: fit-content;
     width: 100vw;
+    height: 93vh;
 }
 
 a {
