@@ -5,7 +5,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-image: radial-gradient(#ccc, #00000050);
+    /* background-image: radial-gradient(#ccc, #00000050); */
+    background-color: #f0f0f030;
+}
+
+#comunicado {
+    width: 98vw;
+    max-width: 1200px;
+    background-color: #fff;
 }
 
 table {
@@ -13,7 +20,8 @@ table {
     background-color: antiquewhite;
     border-collapse: collapse;
     margin: 8vh auto;
-    width: 85vw;
+    width: 98vw;
+    max-width: 1200px;
 }
 
 table,
@@ -89,11 +97,4 @@ td {
 
 .masculino-4 {
     background-color: #bbdefb;
-}
-
-#comunicado {
-    width: 85vw;
-    padding: .1rem;
-    margin-top: .4rem;
-    background-color: #fff;
 }
