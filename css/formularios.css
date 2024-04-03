@@ -20,6 +20,7 @@ a {
     padding: .5em;
     width: 625px;
     max-width: calc(90vw - 15px);
+    display: none;
 }
 
 iframe {
