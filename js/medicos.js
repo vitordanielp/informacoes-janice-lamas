@@ -420,7 +420,8 @@ adicionarMedico(
     numeroRegistro = "21768",
     seletor = "dr-osmar",
     categorias = [0],
-    observacoes = ``
+    observacoes = `
+    <p>Não realiza: <b>US ABD TOTAL</b></p>`
 );
 
 adicionarMedico(
@@ -449,7 +450,8 @@ adicionarMedico(
     observacoes = ``
 );
 
-adicionarMedico(
+// Médico removido
+/* adicionarMedico(
     nome = "Sérgio Eduardo Costa Sampaio",
     apelido = "Sérgio Sampaio",
     sexo = "M",
@@ -470,7 +472,7 @@ adicionarMedico(
 </ul>
 <br>
 <p><b>Valor elastografias: R$: 430,00</b></p>`
-);
+); */
 
 adicionarMedico(
     nome = "Silvio Braz de Paixão",
