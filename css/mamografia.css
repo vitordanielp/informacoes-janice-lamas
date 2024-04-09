@@ -1,6 +1,5 @@
 #container-principal {
     border-radius: 8px;
-    /* background-color: #fff; */
     background-color: var(--red);
     display: flex;
     justify-content: flex-start;
@@ -13,9 +12,17 @@
     border-spacing: 1px;
     text-align: center;
     width: 65vw;
-    font-size: .9rem;
+    font-size: clamp(9px, .95vw, 24px);
     margin: 10px auto;
     user-select: none;
+}
+
+th {
+    font-size: clamp(14px, 1.5vw, 38px);
+}
+
+td {
+    line-height: 1.6em;
 }
 
 .tr-tomossintese {
