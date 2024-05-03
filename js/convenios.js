@@ -1,19 +1,19 @@
 const tabela = document.querySelector("#corpo-tabela");
 let convenios = [];  // novos convênios serão armazenados aqui
 let dados;
-const pacotes = ["mamografia", "ampliação", "us mamas"];
+const pacotes = ["mamografia", "ampliação", "us mamas", "doppler"];
 
 
 (async function () {
     fetch("https://vitordanielp.github.io/escalas/dados/pacotes/pacotes.json")
-    .then(response => response.json())
-    .then(response => {
-        dados = response;
-        getConvenios();
-        for (let convenio of convenios) {
-            addCells(convenio);
-        }
-    });
+        .then(response => response.json())
+        .then(response => {
+            dados = response;
+            getConvenios();
+            for (let convenio of convenios) {
+                addCells(convenio);
+            }
+        });
 }())
 
 class Convenio {
