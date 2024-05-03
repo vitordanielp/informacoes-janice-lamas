@@ -10,10 +10,7 @@ const periodos = ["manha", "tarde"];
 const diaSemana = ["segunda", "terca", "quarta", "quinta", "sexta", "sabado"];
 let data = new Date();
 
-/*
-EventListeners para
-botões da página
-*/
+
 botaoRetroceder.addEventListener("click", () => {
     data.setDate(data.getDate() - 7);
     for (let unidade of unidades) {
@@ -31,7 +28,7 @@ botaoAvancar.addEventListener("click", () => {
 });
 
 botaoAsaSul.addEventListener("click", () => {
-    if(sectionAsa.classList.contains("oculto")) {
+    if (sectionAsa.classList.contains("oculto")) {
         sectionAsa.classList.remove("oculto");
         sectionLago.classList.toggle("oculto");
     }
@@ -40,7 +37,7 @@ botaoAsaSul.addEventListener("click", () => {
 });
 
 botaoLagoSul.addEventListener("click", () => {
-    if(sectionLago.classList.contains("oculto")) {
+    if (sectionLago.classList.contains("oculto")) {
         sectionLago.classList.remove("oculto");
         sectionAsa.classList.toggle("oculto");
     }
@@ -48,17 +45,10 @@ botaoLagoSul.addEventListener("click", () => {
     botaoAsaSul.classList.remove("botao-pressionado")
 });
 
-/*
-Buscar data de segunda-feira
-da semana atual
-*/
 while (data.getDay() > 1) {
     data.setDate(new Date(data.getDate()) - 1);
 }
 
-/*
-Obter salas de cada unidade
-*/
 function getSalas(unidade) {
     unidade = unidade.replace(" ", "-");
     fetch(`https://vitordanielp.github.io/escalas/dados/${unidade}/salas.txt`)
@@ -69,8 +59,7 @@ function getSalas(unidade) {
                 response.pop()
                 salasAsa = response;
                 montarTabela(sectionAsa, unidade, salasAsa)
-            }
-            else {
+            } else {
                 response.pop()
                 salasLago = response;
                 montarTabela(sectionLago, unidade, salasLago)
@@ -79,9 +68,6 @@ function getSalas(unidade) {
 }
 
 
-/*
-Função genérica para request síncrono
-*/
 function synchronousRequest(url) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url, false);
@@ -93,9 +79,7 @@ function synchronousRequest(url) {
     }
 }
 
-/*
-Obter dados de tabela
-*/
+
 function getDados(unidade, sala) {
     try {
         const url = `https://vitordanielp.github.io/escalas/dados/${unidade}/${sala}.json`;
@@ -106,26 +90,15 @@ function getDados(unidade, sala) {
     }
 }
 
-/*
-Apaga todas as
-tabelas da página
-*/
+
 function apagarTabelas() {
     let tabelas = document.querySelectorAll(".escala-table");
     tabelas.forEach(tabela => tabela.remove());
 }
 
 
-/*
-Monta estrutura de tabelas
-e preenche os dados com a
-função getDados()
-*/
-function montarTabela(target, unidade, salas) {
 
-    /*
-    Preenche as datas da semana atual
-    */
+function montarTabela(target, unidade, salas) {
     function preencheDatas() {
         let diaAtual = new Date(data);
         for (let i = 1; i <= 6; i++) {
