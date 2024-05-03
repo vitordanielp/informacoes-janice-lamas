@@ -36,7 +36,19 @@ class Medico {
 const medicos = []
 
 function adicionarMedico(nome, apelido, sexo, unidadeAtendimento, especialidadeMedico, tipoRegistroMedico, numeroRegistroMedico, seletor, categorias, observacoes) {
-    medicos.push(new Medico(nome, apelido, sexo, unidadeAtendimento, especialidadeMedico, tipoRegistroMedico, numeroRegistroMedico, seletor, categorias, observacoes));
+    medicos.push(
+        new Medico(
+            nome,
+            apelido,
+            sexo,
+            unidadeAtendimento,
+            especialidadeMedico,
+            tipoRegistroMedico,
+            numeroRegistroMedico,
+            seletor,
+            categorias,
+            observacoes
+        ));
 }
 
 function exibeObservacoesMedico({ seletor, observacoes }) {
@@ -71,7 +83,7 @@ function exibeInformacao() {
     exibeObservacoesMedico(medico);
     labels.forEach((label) => {
         let styleChanges = "color: #fff; margin-left: 10%;"
-        if(label.control.checked) {
+        if (label.control.checked) {
             label.style = styleChanges;
             label.parentNode.style = "background-color: var(--cor-destaque)";
         } else {
