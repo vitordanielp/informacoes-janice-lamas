@@ -23,19 +23,13 @@ class Convenio {
     }
 }
 
-/*
-Cria nova instância de Convenio
-e armazena na Array convenios
-*/
+
 function addConvenio(nome, pacotes) {
     let convenio = new Convenio(nome, pacotes);
     convenios.push(convenio);
 }
 
-/*
-Insere os convênios na lista
-indicada no início do código.
-*/
+
 function getConvenios() {
     for (let obj of dados) {
         let pacotes = Object.values(obj);
@@ -44,10 +38,7 @@ function getConvenios() {
     }
 }
 
-/* 
-Adiciona os dados de cada
-convênio na tabela.
-*/
+
 function addCells(convenio) {
     let content = `
     <tr class="linha-convenio" id="${convenio.nome.replaceAll(" ", "-")}">

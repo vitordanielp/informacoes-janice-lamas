@@ -30,6 +30,7 @@
     text-align: left;
     background-color: #5a8fed;
     width: fit-content;
+    padding-left: 10px;
 }
 
 #corpo-tabela tr:hover {
