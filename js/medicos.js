@@ -450,30 +450,6 @@ adicionarMedico(
     observacoes = ``
 );
 
-// Médico removido
-/* adicionarMedico(
-    nome = "Sérgio Eduardo Costa Sampaio",
-    apelido = "Sérgio Sampaio",
-    sexo = "M",
-    unidade = "asa sul, lago sul",
-    especialidade = "ginecologista",
-    tipoRegistro = "CRM",
-    numeroRegistro = "4414",
-    seletor = "dr-sergio",
-    categorias = [0, 1],
-    observacoes = `
-<h4>Exames diferenciados:</h4>
-<ul>
-    <li>US gestacional (30 minutos p/ cada feto, particular, consulte tabela de preços)
-    <li>Elastografia hepática (20 miutos, particular)
-    <li>Elastografia axila (shear wave, 20 minutos, particular)
-    <li>Elastografia mama (shear wave, 20 minutos, particular)
-    <li>Elastografia tireoide (shear wave, 20 minutos, particular)
-</ul>
-<br>
-<p><b>Valor elastografias: R$: 430,00</b></p>`
-); */
-
 adicionarMedico(
     nome = "Silvio Braz de Paixão",
     apelido = "Silvio Braz",
