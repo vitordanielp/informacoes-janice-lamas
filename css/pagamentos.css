@@ -5,8 +5,18 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /* background-image: radial-gradient(#ccc, #00000050); */
     background-color: #f0f0f030;
+}
+
+#tabela-parcerias {
+    margin: 10px 0;
+    background-color: #e3f2fd;
+    border: 1px solid;
+    font-size: large;
+}
+
+#tabela-parcerias td {
+    border: 1px solid;
 }
 
 #comunicado {
