@@ -1,5 +1,5 @@
 const tabela = document.querySelector("#corpo-tabela");
-let convenios = [];  // novos convênios serão armazenados aqui
+let convenios = [];
 let dados;
 const pacotes = ["mamografia", "ampliação", "us mamas", "doppler"];
 
