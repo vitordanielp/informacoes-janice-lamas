@@ -1,8 +1,10 @@
 const imagemPreparoRotina = document.querySelector("#imagem-preparo-rotina");
 const imagemPreparoRessonancia = document.querySelector("#imagem-preparo-ressonancia");
+const imagemAviso = document.querySelector("#imagem-aviso");
 const botaoCopiarLink = document.querySelector("#btn-copiar-link");
 const radiosPreparoRotina = document.getElementsByName("preparo");
 const radiosPreparoRessonancia = document.getElementsByName("preparo-rm");
+const radiosAvisos = document.getElementsByName("radio-avisos");
 
 function exibePreparo(option) {
     let path = "../img/preparos";
@@ -18,6 +20,11 @@ function exibePreparo(option) {
         path += "/rotina";
         imageTarget = imagemPreparoRotina;
         preparo = Array.from(radiosPreparoRotina).find(r => r.checked).id;
+    }
+    else if (option === "aviso") {
+        path += "/avisos";
+        imageTarget = imagemAviso;
+        preparo = Array.from(radiosAvisos).find(r => r.checked).id;
     }
 
     imageTarget.src = `${path}/${preparo}.jpg`;
@@ -35,3 +42,4 @@ function copiarTexto(texto) {
 
 exibePreparo("rotina");
 exibePreparo("ressonancia");
+exibePreparo("aviso");

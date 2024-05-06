@@ -127,7 +127,7 @@
             </div>
         </section>
 
-        <section id="container-inferior" class="container-principal">
+        <section id="container-central" class="container-principal">
             <form class="formulario-preparos" id="formulario-rm"
                 onchange="exibePreparo('ressonancia')">
                 <h2 class="titulo-radios">Ressonância Magnética</h2>
@@ -221,6 +221,36 @@
             <div class="imagem-preparo-container">
                 <img src="" alt="preparos em imagem" class="imagem-preparo"
                     id="imagem-preparo-ressonancia"
+                    title="Dica: arraste a imagem para dentro da conversa no Whatsapp.">
+            </div>
+        </section>
+
+        <section id="container-inferior" class="container-principal">
+            <form class="formulario-preparos" id="formulario-avisos"
+                onchange="exibePreparo('aviso')">
+                <h2 class="titulo-radios">Avisos mamografia com técnica</h2>
+                <div class="radios-container">
+                    <div class="radio-container">
+                        <input type="radio" name="radio-avisos" id="aviso-aeronautica" checked>
+                        <label for="aviso-aeronautica">Aeronáutica</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="radio-avisos" id="aviso-caixa">
+                        <label for="aviso-caixa">Caixa</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="radio-avisos" id="aviso-cassi">
+                        <label for="aviso-cassi">Cassi</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="radio-avisos" id="aviso-geap">
+                        <label for="aviso-geap">Geap</label>
+                    </div>
+                </div>
+            </form>
+            <div class="imagem-preparo-container">
+                <img src="" alt="preparos em imagem" class="imagem-preparo"
+                    id="imagem-aviso"
                     title="Dica: arraste a imagem para dentro da conversa no Whatsapp.">
             </div>
         </section>
