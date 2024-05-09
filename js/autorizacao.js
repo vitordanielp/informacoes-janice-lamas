@@ -26,8 +26,8 @@ function incluirAutorizador(nome, convenios) {
 /* Adicionando autorizadores */
 incluirAutorizador(nome = "gisele sandra", convenios = ["ASSEFAZ", "BACEN", "CAIXA", "E-VIDA", "FASCAL", "MEDSERVICE", "SIS-SENADO", "STF", "TRE", "TST"]);
 incluirAutorizador(nome = "", convenios = ["AUTORIZADOR CORINGA", "Responsável pela antecipação dos convênios críticos."]);
-incluirAutorizador(nome = "ana ribeiro", convenios = ["AFFEGO", "AMIL", "CAESAN", "GDF", "SERPRO", "STJ", "STM", "TJDFT", "TRF"]);
-incluirAutorizador(nome = "jacke rodrigues", convenios = ["BRADESCO", "MPU", "CAPESESP", "CASEMBRAPA", "BRB", "CONAB", "AMHP", "GAMA", "CASEC"]);
+incluirAutorizador(nome = "andressa", convenios = ["AFFEGO", "AMIL", "CAESAN", "GDF", "SERPRO", "STJ", "STM", "TJDFT", "TRF"]);
+incluirAutorizador(nome = "kessia", convenios = ["BRADESCO", "MPU", "CAPESESP", "CASEMBRAPA", "BRB", "CONAB", "AMHP", "GAMA", "CASEC"]);
 incluirAutorizador(nome = "raquel almeida", convenios = ["CÂMARA", "CASSI", "GEAP", "INFRAERO", "PETROBRÁS", "POLÍCIA FEDERAL", "POSTAL SAÚDE", "PROASA", "TRT", "UNAFISCO", "UNIMED"]);
 incluirAutorizador(nome = "patricia", convenios = ["GESTÃO DE AGENDAS", "ACOMPANHAMENTO DE RESSONÂNCIA"]);
 
