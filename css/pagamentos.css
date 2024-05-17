@@ -8,6 +8,13 @@ main {
     background-color: #f0f0f030;
 }
 
+#conta-bancaria {
+    background: #e3f2fd;
+    width: 99%;
+    padding: 10px 0;
+    text-align: center;
+}
+
 #tabela-parcerias {
     margin: 10px 0;
     background-color: #e3f2fd;
