@@ -23,7 +23,7 @@ td {
 }
 
 .bloco-tabela {
-    height: 42vh;
+    height: 40vh;
 }
 
 .titulo-tabela {
@@ -41,4 +41,13 @@ td {
 .vazio {
     background-color: #333333b0;
     border: none;
+}
+
+#texto-email {
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    span {
+        color: #d1d1d1;
+    }
 }
