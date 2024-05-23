@@ -342,7 +342,10 @@ adicionarMedico(
     numeroRegistroMedico = "4906",
     seletor = "dra-marcia-cristina",
     categorias = [0],
-    observacoes = ``
+    observacoes = `
+    <p style="line-height:50px;">
+        <b>US MAMAS</b> - Somente 5 por agenda.
+    </p>`
 );
 
 adicionarMedico(
