@@ -1,4 +1,4 @@
-const scripts = ["agendamento", "confirmacao", "mamografia-com-tecnica", "resgate", "tomossintese"];
+const scripts = ["agendamento", "confirmacao", "mamografia-com-tecnica", "resgate", "faltosos", "tomossintese"];
 const imgContainer = document.querySelector("#image-container");
 const navigation = document.querySelector("#navigation");
 const image = document.querySelector("#image-script");
