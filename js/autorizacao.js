@@ -25,10 +25,10 @@ function incluirAutorizador(nome, convenios) {
 
 /* Adicionando autorizadores */
 incluirAutorizador(nome = "gisele sandra", convenios = ["GEAP", "MPU", "SIS-SENADO", "SUL-AMÉRICA", "TRE", "TRF", "TST", "UNAFISCO", "UNIMED"]);
-incluirAutorizador(nome = "ana ribeiro", convenios = ["AFFEGO", "CÂMARA", "PETROBRÁS", "PROASA", "SERPRO", "STJ", "STM", "TJDFT", "E-VIDA"]);
-incluirAutorizador(nome = "kessia", convenios = ["AMIL", "ASSEFAZ", "BRB", "CAPESESP", "CONAB", "FASCAL", "GAMA SAÚDE", "GDF", "POLÍCIA FEDERAL", "POSTAL SAÚDE"]);
-incluirAutorizador(nome = "andressa", convenios = ["AMHP", "BRADESCO", "CAESAN", "CAIXA", "CASEC", "CASEMBRAPA", "CASSI", "MEDSERVICE", "STF", "TRT"]);
-incluirAutorizador(nome = "patricia", convenios = ["GESTÃO DE AGENDAS", "ACOMPANHAMENTO DE RESSONÂNCIA - TOMOSSÍNTESE - NUTRIÇÃO"]);
+incluirAutorizador(nome = "ana ribeiro", convenios = ["AFFEGO", "CÂMARA", "E-VIDA", "PETROBRÁS", "PROASA", "SERPRO", "STJ", "STM", "TJDFT"]);
+incluirAutorizador(nome = "tainá santos", convenios = ["AMIL", "ASSEFAZ", "BRADESCO", "CAPESESP", "CONAB", "FASCAL", "GAMA SAÚDE", "POLÍCIA FEDERAL", "POSTAL SAÚDE"]);
+incluirAutorizador(nome = "andressa", convenios = ["AMHP", "BRB", "CAESAN", "CAIXA", "CASEC", "CASEMBRAPA", "CASSI", "GDF", "MEDSERVICE", "STF", "TRT"]);
+incluirAutorizador(nome = "izabella", convenios = ["GESTÃO DE AGENDAS", "ACOMPANHAMENTO DE RESSONÂNCIA - TOMOSSÍNTESE - NUTRIÇÃO"]);
 
 
 /* Preenchimento da tabela */
