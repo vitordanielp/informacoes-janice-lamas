@@ -475,7 +475,31 @@ adicionarMedico(
     numeroRegistroMedico = "10605",
     seletor = "dr-silvio",
     categorias = [0, 1],
-    observacoes = ``
+    observacoes = `
+    <h4>Cobertura para ELASTOGRAFIA</h4>
+    <ul>
+        <li>Amil
+        <li>BRB
+        <li>Capesesp
+        <li>Caixa
+        <li>Câmara
+        <li>Fascal
+        <li>MPU
+        <li>Polícia Federal
+        <li>Proasa
+        <li>SIS - SENADO
+        <li>STF
+        <li>STJ
+        <li>STM
+        <li>TJDFT
+        <li>TRE
+        <li>TRF
+        <li>TRT
+        <li>TST
+        <li>Unimed
+        <li>Fusex
+        <li>Inas - GDF
+    </ul>`
 );
 
 adicionarMedico(
